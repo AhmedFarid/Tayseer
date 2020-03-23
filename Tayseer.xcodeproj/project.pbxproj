@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44B3A0938D33C3B259CF2049 /* Pods_Tayseer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55BC365E0C4EC95D68021324 /* Pods_Tayseer.framework */; };
+		69646FC82428BDA500A06E32 /* homeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69646FC62428BDA500A06E32 /* homeVC.swift */; };
+		69646FC92428BDA500A06E32 /* homeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69646FC72428BDA500A06E32 /* homeVC.xib */; };
+		69646FCC2428BF9F00A06E32 /* bannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69646FCA2428BF9F00A06E32 /* bannerCell.swift */; };
+		69646FCD2428BF9F00A06E32 /* bannerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69646FCB2428BF9F00A06E32 /* bannerCell.xib */; };
+		69646FD12428BFC600A06E32 /* categoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69646FCF2428BFC600A06E32 /* categoryCell.swift */; };
+		69646FD22428BFC600A06E32 /* categoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69646FD02428BFC600A06E32 /* categoryCell.xib */; };
+		69A8EB4F2428CFB6005089D1 /* myOrdersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A8EB4D2428CFB6005089D1 /* myOrdersVC.swift */; };
+		69A8EB502428CFB6005089D1 /* myOrdersVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69A8EB4E2428CFB6005089D1 /* myOrdersVC.xib */; };
+		69A8EB542428CFF7005089D1 /* notificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A8EB522428CFF7005089D1 /* notificationVC.swift */; };
+		69A8EB552428CFF7005089D1 /* notificationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69A8EB532428CFF7005089D1 /* notificationVC.xib */; };
+		69A8EB592428D02E005089D1 /* moreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A8EB572428D02E005089D1 /* moreVC.swift */; };
+		69A8EB5A2428D02E005089D1 /* moreVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69A8EB582428D02E005089D1 /* moreVC.xib */; };
+		69A8EB5F2428E2FD005089D1 /* categoriesDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A8EB5D2428E2FD005089D1 /* categoriesDetailsVC.swift */; };
+		69A8EB602428E2FD005089D1 /* categoriesDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69A8EB5E2428E2FD005089D1 /* categoriesDetailsVC.xib */; };
+		69FBAB07242239E6004F5B4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FBAB06242239E6004F5B4B /* AppDelegate.swift */; };
+		69FBAB09242239E6004F5B4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FBAB08242239E6004F5B4B /* SceneDelegate.swift */; };
+		69FBAB0B242239E6004F5B4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FBAB0A242239E6004F5B4B /* ViewController.swift */; };
+		69FBAB0E242239E6004F5B4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69FBAB0C242239E6004F5B4B /* Main.storyboard */; };
+		69FBAB10242239EA004F5B4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69FBAB0F242239EA004F5B4B /* Assets.xcassets */; };
+		69FBAB13242239EA004F5B4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69FBAB11242239EA004F5B4B /* LaunchScreen.storyboard */; };
+		69FBAB282422432A004F5B4B /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FBAB2624224329004F5B4B /* loginVC.swift */; };
+		69FBAB292422432A004F5B4B /* loginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69FBAB2724224329004F5B4B /* loginVC.xib */; };
+		69FBAB2B242245C3004F5B4B /* coustomRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FBAB2A242245C3004F5B4B /* coustomRoundedButton.swift */; };
+		69FBAB2D24224969004F5B4B /* navHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FBAB2C24224969004F5B4B /* navHelper.swift */; };
+		69FBAB2F24224B9C004F5B4B /* textimage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FBAB2E24224B9C004F5B4B /* textimage.swift */; };
+		69FBAB3324224EAA004F5B4B /* Cairo-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69FBAB3024224EAA004F5B4B /* Cairo-SemiBold.ttf */; };
+		69FBAB3424224EAA004F5B4B /* Cairo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69FBAB3124224EAA004F5B4B /* Cairo-Regular.ttf */; };
+		69FBAB3524224EAA004F5B4B /* Cairo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69FBAB3224224EAA004F5B4B /* Cairo-Bold.ttf */; };
+		69FBAB3824225D85004F5B4B /* signupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FBAB3624225D85004F5B4B /* signupVC.swift */; };
+		69FBAB3924225D85004F5B4B /* signupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69FBAB3724225D85004F5B4B /* signupVC.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A3BA24A288642FC70F84F9D /* Pods-Tayseer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tayseer.debug.xcconfig"; path = "Target Support Files/Pods-Tayseer/Pods-Tayseer.debug.xcconfig"; sourceTree = "<group>"; };
+		55BC365E0C4EC95D68021324 /* Pods_Tayseer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tayseer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69646FC62428BDA500A06E32 /* homeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeVC.swift; sourceTree = "<group>"; };
+		69646FC72428BDA500A06E32 /* homeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = homeVC.xib; sourceTree = "<group>"; };
+		69646FCA2428BF9F00A06E32 /* bannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bannerCell.swift; sourceTree = "<group>"; };
+		69646FCB2428BF9F00A06E32 /* bannerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = bannerCell.xib; sourceTree = "<group>"; };
+		69646FCF2428BFC600A06E32 /* categoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoryCell.swift; sourceTree = "<group>"; };
+		69646FD02428BFC600A06E32 /* categoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = categoryCell.xib; sourceTree = "<group>"; };
+		69A8EB4D2428CFB6005089D1 /* myOrdersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myOrdersVC.swift; sourceTree = "<group>"; };
+		69A8EB4E2428CFB6005089D1 /* myOrdersVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = myOrdersVC.xib; sourceTree = "<group>"; };
+		69A8EB522428CFF7005089D1 /* notificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationVC.swift; sourceTree = "<group>"; };
+		69A8EB532428CFF7005089D1 /* notificationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = notificationVC.xib; sourceTree = "<group>"; };
+		69A8EB572428D02E005089D1 /* moreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moreVC.swift; sourceTree = "<group>"; };
+		69A8EB582428D02E005089D1 /* moreVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = moreVC.xib; sourceTree = "<group>"; };
+		69A8EB5D2428E2FD005089D1 /* categoriesDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoriesDetailsVC.swift; sourceTree = "<group>"; };
+		69A8EB5E2428E2FD005089D1 /* categoriesDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = categoriesDetailsVC.xib; sourceTree = "<group>"; };
+		69FBAB03242239E6004F5B4B /* Tayseer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tayseer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69FBAB06242239E6004F5B4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		69FBAB08242239E6004F5B4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		69FBAB0A242239E6004F5B4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		69FBAB0D242239E6004F5B4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		69FBAB0F242239EA004F5B4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69FBAB12242239EA004F5B4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		69FBAB14242239EA004F5B4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69FBAB2624224329004F5B4B /* loginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
+		69FBAB2724224329004F5B4B /* loginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = loginVC.xib; sourceTree = "<group>"; };
+		69FBAB2A242245C3004F5B4B /* coustomRoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coustomRoundedButton.swift; sourceTree = "<group>"; };
+		69FBAB2C24224969004F5B4B /* navHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navHelper.swift; sourceTree = "<group>"; };
+		69FBAB2E24224B9C004F5B4B /* textimage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textimage.swift; sourceTree = "<group>"; };
+		69FBAB3024224EAA004F5B4B /* Cairo-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-SemiBold.ttf"; sourceTree = "<group>"; };
+		69FBAB3124224EAA004F5B4B /* Cairo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Regular.ttf"; sourceTree = "<group>"; };
+		69FBAB3224224EAA004F5B4B /* Cairo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Bold.ttf"; sourceTree = "<group>"; };
+		69FBAB3624225D85004F5B4B /* signupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupVC.swift; sourceTree = "<group>"; };
+		69FBAB3724225D85004F5B4B /* signupVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = signupVC.xib; sourceTree = "<group>"; };
+		EDBD3464E996C18FDECBCFD5 /* Pods-Tayseer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tayseer.release.xcconfig"; path = "Target Support Files/Pods-Tayseer/Pods-Tayseer.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69FBAB00242239E6004F5B4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44B3A0938D33C3B259CF2049 /* Pods_Tayseer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DB2935568A32F656AFE9811 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55BC365E0C4EC95D68021324 /* Pods_Tayseer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		69646FC52428BD7F00A06E32 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				69A8EB5C2428E297005089D1 /* categoriesDetails */,
+				69A8EB5B2428E28B005089D1 /* Home */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		69646FCE2428BFA500A06E32 /* bannerCell */ = {
+			isa = PBXGroup;
+			children = (
+				69646FCA2428BF9F00A06E32 /* bannerCell.swift */,
+				69646FCB2428BF9F00A06E32 /* bannerCell.xib */,
+			);
+			path = bannerCell;
+			sourceTree = "<group>";
+		};
+		69646FD32428BFCC00A06E32 /* categoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				69646FCF2428BFC600A06E32 /* categoryCell.swift */,
+				69646FD02428BFC600A06E32 /* categoryCell.xib */,
+			);
+			path = categoryCell;
+			sourceTree = "<group>";
+		};
+		69A8EB4C2428CF8D005089D1 /* MyOrders */ = {
+			isa = PBXGroup;
+			children = (
+				69A8EB4D2428CFB6005089D1 /* myOrdersVC.swift */,
+				69A8EB4E2428CFB6005089D1 /* myOrdersVC.xib */,
+			);
+			path = MyOrders;
+			sourceTree = "<group>";
+		};
+		69A8EB512428CFDB005089D1 /* Notifaction */ = {
+			isa = PBXGroup;
+			children = (
+				69A8EB522428CFF7005089D1 /* notificationVC.swift */,
+				69A8EB532428CFF7005089D1 /* notificationVC.xib */,
+			);
+			path = Notifaction;
+			sourceTree = "<group>";
+		};
+		69A8EB562428D01F005089D1 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				69A8EB572428D02E005089D1 /* moreVC.swift */,
+				69A8EB582428D02E005089D1 /* moreVC.xib */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		69A8EB5B2428E28B005089D1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				69646FC62428BDA500A06E32 /* homeVC.swift */,
+				69646FC72428BDA500A06E32 /* homeVC.xib */,
+				69646FCE2428BFA500A06E32 /* bannerCell */,
+				69646FD32428BFCC00A06E32 /* categoryCell */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		69A8EB5C2428E297005089D1 /* categoriesDetails */ = {
+			isa = PBXGroup;
+			children = (
+				69A8EB5D2428E2FD005089D1 /* categoriesDetailsVC.swift */,
+				69A8EB5E2428E2FD005089D1 /* categoriesDetailsVC.xib */,
+			);
+			path = categoriesDetails;
+			sourceTree = "<group>";
+		};
+		69FBAAFA242239E5004F5B4B = {
+			isa = PBXGroup;
+			children = (
+				69FBAB05242239E6004F5B4B /* Tayseer */,
+				69FBAB04242239E6004F5B4B /* Products */,
+				B290C84DC85EB585A354B69A /* Pods */,
+				0DB2935568A32F656AFE9811 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		69FBAB04242239E6004F5B4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69FBAB03242239E6004F5B4B /* Tayseer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69FBAB05242239E6004F5B4B /* Tayseer */ = {
+			isa = PBXGroup;
+			children = (
+				69FBAB2224224234004F5B4B /* View */,
+				69FBAB2124224226004F5B4B /* URLs */,
+				69FBAB202422421E004F5B4B /* Storyboard */,
+				69FBAB1F2422420B004F5B4B /* Others */,
+				69FBAB1E242241F8004F5B4B /* Model */,
+				69FBAB1D242241E5004F5B4B /* Fonts */,
+				69FBAB1C242241D6004F5B4B /* Extension */,
+				69FBAB1B242241C1004F5B4B /* Controller */,
+				69FBAB1A242241AB004F5B4B /* API Service */,
+				69FBAB14242239EA004F5B4B /* Info.plist */,
+			);
+			path = Tayseer;
+			sourceTree = "<group>";
+		};
+		69FBAB1A242241AB004F5B4B /* API Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "API Service";
+			sourceTree = "<group>";
+		};
+		69FBAB1B242241C1004F5B4B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				69A8EB562428D01F005089D1 /* More */,
+				69A8EB512428CFDB005089D1 /* Notifaction */,
+				69A8EB4C2428CF8D005089D1 /* MyOrders */,
+				69646FC52428BD7F00A06E32 /* Home */,
+				69FBAB23242242CC004F5B4B /* Auth */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		69FBAB1C242241D6004F5B4B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				69FBAB2C24224969004F5B4B /* navHelper.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		69FBAB1D242241E5004F5B4B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				69FBAB3224224EAA004F5B4B /* Cairo-Bold.ttf */,
+				69FBAB3124224EAA004F5B4B /* Cairo-Regular.ttf */,
+				69FBAB3024224EAA004F5B4B /* Cairo-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		69FBAB1E242241F8004F5B4B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		69FBAB1F2422420B004F5B4B /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				69FBAB0F242239EA004F5B4B /* Assets.xcassets */,
+				69FBAB06242239E6004F5B4B /* AppDelegate.swift */,
+				69FBAB08242239E6004F5B4B /* SceneDelegate.swift */,
+				69FBAB0A242239E6004F5B4B /* ViewController.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		69FBAB202422421E004F5B4B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				69FBAB0C242239E6004F5B4B /* Main.storyboard */,
+				69FBAB11242239EA004F5B4B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		69FBAB2124224226004F5B4B /* URLs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = URLs;
+			sourceTree = "<group>";
+		};
+		69FBAB2224224234004F5B4B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69FBAB2A242245C3004F5B4B /* coustomRoundedButton.swift */,
+				69FBAB2E24224B9C004F5B4B /* textimage.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69FBAB23242242CC004F5B4B /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				69FBAB25242242E1004F5B4B /* Login */,
+				69FBAB24242242D6004F5B4B /* Signup */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		69FBAB24242242D6004F5B4B /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				69FBAB3624225D85004F5B4B /* signupVC.swift */,
+				69FBAB3724225D85004F5B4B /* signupVC.xib */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		69FBAB25242242E1004F5B4B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				69FBAB2624224329004F5B4B /* loginVC.swift */,
+				69FBAB2724224329004F5B4B /* loginVC.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B290C84DC85EB585A354B69A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A3BA24A288642FC70F84F9D /* Pods-Tayseer.debug.xcconfig */,
+				EDBD3464E996C18FDECBCFD5 /* Pods-Tayseer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69FBAB02242239E6004F5B4B /* Tayseer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69FBAB17242239EA004F5B4B /* Build configuration list for PBXNativeTarget "Tayseer" */;
+			buildPhases = (
+				4627B770ACF8A167BC927457 /* [CP] Check Pods Manifest.lock */,
+				69FBAAFF242239E6004F5B4B /* Sources */,
+				69FBAB00242239E6004F5B4B /* Frameworks */,
+				69FBAB01242239E6004F5B4B /* Resources */,
+				ED681CC4955EB707176B3440 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tayseer;
+			productName = Tayseer;
+			productReference = 69FBAB03242239E6004F5B4B /* Tayseer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69FBAAFB242239E5004F5B4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "E-bakers";
+				TargetAttributes = {
+					69FBAB02242239E6004F5B4B = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 69FBAAFE242239E5004F5B4B /* Build configuration list for PBXProject "Tayseer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69FBAAFA242239E5004F5B4B;
+			productRefGroup = 69FBAB04242239E6004F5B4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69FBAB02242239E6004F5B4B /* Tayseer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69FBAB01242239E6004F5B4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69A8EB602428E2FD005089D1 /* categoriesDetailsVC.xib in Resources */,
+				69FBAB3424224EAA004F5B4B /* Cairo-Regular.ttf in Resources */,
+				69A8EB502428CFB6005089D1 /* myOrdersVC.xib in Resources */,
+				69FBAB13242239EA004F5B4B /* LaunchScreen.storyboard in Resources */,
+				69646FD22428BFC600A06E32 /* categoryCell.xib in Resources */,
+				69A8EB552428CFF7005089D1 /* notificationVC.xib in Resources */,
+				69FBAB10242239EA004F5B4B /* Assets.xcassets in Resources */,
+				69FBAB3324224EAA004F5B4B /* Cairo-SemiBold.ttf in Resources */,
+				69A8EB5A2428D02E005089D1 /* moreVC.xib in Resources */,
+				69FBAB3924225D85004F5B4B /* signupVC.xib in Resources */,
+				69FBAB292422432A004F5B4B /* loginVC.xib in Resources */,
+				69646FC92428BDA500A06E32 /* homeVC.xib in Resources */,
+				69FBAB0E242239E6004F5B4B /* Main.storyboard in Resources */,
+				69FBAB3524224EAA004F5B4B /* Cairo-Bold.ttf in Resources */,
+				69646FCD2428BF9F00A06E32 /* bannerCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4627B770ACF8A167BC927457 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tayseer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED681CC4955EB707176B3440 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tayseer/Pods-Tayseer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tayseer/Pods-Tayseer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tayseer/Pods-Tayseer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69FBAAFF242239E6004F5B4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69646FD12428BFC600A06E32 /* categoryCell.swift in Sources */,
+				69FBAB3824225D85004F5B4B /* signupVC.swift in Sources */,
+				69646FCC2428BF9F00A06E32 /* bannerCell.swift in Sources */,
+				69FBAB0B242239E6004F5B4B /* ViewController.swift in Sources */,
+				69FBAB2F24224B9C004F5B4B /* textimage.swift in Sources */,
+				69A8EB4F2428CFB6005089D1 /* myOrdersVC.swift in Sources */,
+				69FBAB2D24224969004F5B4B /* navHelper.swift in Sources */,
+				69A8EB542428CFF7005089D1 /* notificationVC.swift in Sources */,
+				69A8EB5F2428E2FD005089D1 /* categoriesDetailsVC.swift in Sources */,
+				69FBAB07242239E6004F5B4B /* AppDelegate.swift in Sources */,
+				69A8EB592428D02E005089D1 /* moreVC.swift in Sources */,
+				69FBAB282422432A004F5B4B /* loginVC.swift in Sources */,
+				69FBAB2B242245C3004F5B4B /* coustomRoundedButton.swift in Sources */,
+				69646FC82428BDA500A06E32 /* homeVC.swift in Sources */,
+				69FBAB09242239E6004F5B4B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		69FBAB0C242239E6004F5B4B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69FBAB0D242239E6004F5B4B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		69FBAB11242239EA004F5B4B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69FBAB12242239EA004F5B4B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69FBAB15242239EA004F5B4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		69FBAB16242239EA004F5B4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69FBAB18242239EA004F5B4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A3BA24A288642FC70F84F9D /* Pods-Tayseer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4Z34DQ34UQ;
+				INFOPLIST_FILE = Tayseer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FaridEbakers.Tayseer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		69FBAB19242239EA004F5B4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDBD3464E996C18FDECBCFD5 /* Pods-Tayseer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4Z34DQ34UQ;
+				INFOPLIST_FILE = Tayseer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FaridEbakers.Tayseer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69FBAAFE242239E5004F5B4B /* Build configuration list for PBXProject "Tayseer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69FBAB15242239EA004F5B4B /* Debug */,
+				69FBAB16242239EA004F5B4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69FBAB17242239EA004F5B4B /* Build configuration list for PBXNativeTarget "Tayseer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69FBAB18242239EA004F5B4B /* Debug */,
+				69FBAB19242239EA004F5B4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69FBAAFB242239E5004F5B4B /* Project object */;
+}

@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (5.0.2)
+  - IQKeyboardManagerSwift (6.5.5)
+  - Kingfisher (5.13.1):
+    - Kingfisher/Core (= 5.13.1)
+  - Kingfisher/Core (5.13.1)
+  - MOLH (1.1.2)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - IQKeyboardManagerSwift
+  - Kingfisher
+  - MOLH
+  - NVActivityIndicatorView
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - MOLH
+    - NVActivityIndicatorView
+
+SPEC CHECKSUMS:
+  Alamofire: 3ba7a4db18b4f62c4a1c0e1cb39d7f3d52e10ada
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  Kingfisher: f33a848445e33c543620812158dc5d47f6bf90df
+  MOLH: 79723d6938aff0ac02aebe4d89cc96b73f46fa32
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
+
+PODFILE CHECKSUM: 3cd4924cf45f2b9aed8ded8ff7c05b6569e58a0c
+
+COCOAPODS: 1.8.4

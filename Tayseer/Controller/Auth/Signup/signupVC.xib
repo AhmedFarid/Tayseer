@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="signupVC" customModule="Tayseer" customModuleProvider="target">
+            <connections>
+                <outlet property="address" destination="eRu-3X-nhZ" id="YVO-o9-a53"/>
+                <outlet property="email" destination="UxT-h8-6WR" id="qXZ-3u-n0Q"/>
+                <outlet property="fullname" destination="tWi-Sw-Wh1" id="FQl-MO-ASs"/>
+                <outlet property="password" destination="O9L-89-ipt" id="6zV-KF-mpb"/>
+                <outlet property="phone" destination="Xtf-Sz-062" id="75x-oK-0Xg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="RHb-d3-DA4">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uss-Ps-Zor">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="89h-es-VCj">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="750"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 2" translatesAutoresizingMaskIntoConstraints="NO" id="1zH-vO-Sn4">
+                                    <rect key="frame" x="93.5" y="32" width="227" height="278"/>
+                                </imageView>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xtf-Sz-062">
+                                    <rect key="frame" x="16" y="408" width="382" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="gDw-LX-3SJ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O9L-89-ipt">
+                                    <rect key="frame" x="16" y="606" width="382" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="HFR-Kj-7Fo"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28D-fN-wIn" customClass="coustomRoundedButton" customModule="Tayseer" customModuleProvider="target">
+                                    <rect key="frame" x="75.5" y="688" width="263" height="45"/>
+                                    <color key="backgroundColor" red="0.21410545710000001" green="0.31319692729999998" blue="0.60851407049999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="Kvv-RY-hCN"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                    <state key="normal" title="Sign Up">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="2"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UxT-h8-6WR">
+                                    <rect key="frame" x="16" y="540" width="382" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="aas-Ar-ago"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eRu-3X-nhZ">
+                                    <rect key="frame" x="16" y="474" width="382" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="GeC-es-PXE"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tWi-Sw-Wh1">
+                                    <rect key="frame" x="16" y="342" width="382" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="7Kl-gQ-ZQ1"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="28D-fN-wIn" firstAttribute="top" secondItem="O9L-89-ipt" secondAttribute="bottom" constant="32" id="1JV-iT-E4r"/>
+                                <constraint firstItem="1zH-vO-Sn4" firstAttribute="top" secondItem="89h-es-VCj" secondAttribute="top" constant="32" id="6pq-jb-bZ3"/>
+                                <constraint firstItem="UxT-h8-6WR" firstAttribute="leading" secondItem="tWi-Sw-Wh1" secondAttribute="leading" id="76q-eK-F9E"/>
+                                <constraint firstAttribute="trailing" secondItem="tWi-Sw-Wh1" secondAttribute="trailing" constant="16" id="ACT-j1-9FL"/>
+                                <constraint firstItem="eRu-3X-nhZ" firstAttribute="trailing" secondItem="tWi-Sw-Wh1" secondAttribute="trailing" id="Bqa-ip-8Of"/>
+                                <constraint firstItem="Xtf-Sz-062" firstAttribute="leading" secondItem="tWi-Sw-Wh1" secondAttribute="leading" id="N5A-pK-30P"/>
+                                <constraint firstItem="UxT-h8-6WR" firstAttribute="top" secondItem="eRu-3X-nhZ" secondAttribute="bottom" constant="16" id="N60-cS-A9m"/>
+                                <constraint firstItem="1zH-vO-Sn4" firstAttribute="centerX" secondItem="89h-es-VCj" secondAttribute="centerX" id="RzQ-9w-f8x"/>
+                                <constraint firstItem="eRu-3X-nhZ" firstAttribute="top" secondItem="Xtf-Sz-062" secondAttribute="bottom" constant="16" id="W5z-zG-UAn"/>
+                                <constraint firstItem="Xtf-Sz-062" firstAttribute="top" secondItem="tWi-Sw-Wh1" secondAttribute="bottom" constant="16" id="YAT-i0-782"/>
+                                <constraint firstItem="O9L-89-ipt" firstAttribute="top" secondItem="UxT-h8-6WR" secondAttribute="bottom" constant="16" id="YhO-Zi-Hbs"/>
+                                <constraint firstAttribute="height" constant="750" id="YwJ-Hu-KOc"/>
+                                <constraint firstItem="tWi-Sw-Wh1" firstAttribute="top" secondItem="1zH-vO-Sn4" secondAttribute="bottom" constant="32" id="agp-6c-MTW"/>
+                                <constraint firstItem="O9L-89-ipt" firstAttribute="trailing" secondItem="tWi-Sw-Wh1" secondAttribute="trailing" id="bBp-O5-jNG"/>
+                                <constraint firstItem="eRu-3X-nhZ" firstAttribute="leading" secondItem="tWi-Sw-Wh1" secondAttribute="leading" id="tbn-jR-wP4"/>
+                                <constraint firstItem="28D-fN-wIn" firstAttribute="centerX" secondItem="89h-es-VCj" secondAttribute="centerX" id="vD2-80-gUr"/>
+                                <constraint firstItem="tWi-Sw-Wh1" firstAttribute="leading" secondItem="89h-es-VCj" secondAttribute="leading" constant="16" id="wpn-31-n3W"/>
+                                <constraint firstItem="UxT-h8-6WR" firstAttribute="trailing" secondItem="tWi-Sw-Wh1" secondAttribute="trailing" id="xWX-9V-laz"/>
+                                <constraint firstItem="O9L-89-ipt" firstAttribute="leading" secondItem="tWi-Sw-Wh1" secondAttribute="leading" id="yrB-BA-CRA"/>
+                                <constraint firstItem="Xtf-Sz-062" firstAttribute="trailing" secondItem="tWi-Sw-Wh1" secondAttribute="trailing" id="zx5-0y-Ouq"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="89h-es-VCj" secondAttribute="trailing" id="cDw-RX-vfk"/>
+                        <constraint firstItem="89h-es-VCj" firstAttribute="top" secondItem="Uss-Ps-Zor" secondAttribute="top" id="eFA-FB-Wz7"/>
+                        <constraint firstItem="89h-es-VCj" firstAttribute="leading" secondItem="Uss-Ps-Zor" secondAttribute="leading" id="sC7-Ic-FUH"/>
+                        <constraint firstAttribute="bottom" secondItem="89h-es-VCj" secondAttribute="bottom" id="sJl-F8-eax"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Uss-Ps-Zor" secondAttribute="bottom" id="6wC-t8-tGW"/>
+                <constraint firstItem="1zH-vO-Sn4" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.548309" id="Dk8-aR-qbb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Uss-Ps-Zor" secondAttribute="trailing" id="JSx-1s-zaW"/>
+                <constraint firstItem="RHb-d3-DA4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="N1Z-jn-l5h"/>
+                <constraint firstAttribute="bottom" secondItem="RHb-d3-DA4" secondAttribute="bottom" id="Q8Z-pc-XQd"/>
+                <constraint firstItem="Uss-Ps-Zor" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ceS-Tb-kSj"/>
+                <constraint firstItem="1zH-vO-Sn4" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.310268" id="cf1-21-F7t"/>
+                <constraint firstItem="RHb-d3-DA4" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="eGf-0g-ful"/>
+                <constraint firstItem="Uss-Ps-Zor" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gfI-Gt-lOj"/>
+                <constraint firstItem="RHb-d3-DA4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gvx-8u-25C"/>
+                <constraint firstItem="28D-fN-wIn" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.635266" id="mev-H3-iIa"/>
+                <constraint firstItem="89h-es-VCj" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="wqI-Qo-KTS"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="141.96428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="1" width="375" height="812"/>
+        <image name="Group 2" width="306" height="377"/>
+    </resources>
+</document>
