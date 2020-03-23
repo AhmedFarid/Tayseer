@@ -18,7 +18,7 @@ class homeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setUpNavColore(isTranslucent: false, backColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1),navColor: #colorLiteral(red: 0.2141054571, green: 0.3131969273, blue: 0.6085140705, alpha: 1), barStyle: .black, cart: true)
+       setUpNavColore(false)
         
         bannerCollectionView.register(UINib(nibName: "bannerCell", bundle: nil), forCellWithReuseIdentifier: "cell")
         bannerCollectionView.delegate = self
@@ -77,6 +77,15 @@ extension homeVC: UICollectionViewDataSource,UICollectionViewDelegate, UICollect
             //let hightAdjustment: CGFloat = 30.0
             let width = (categouryCollectionView.frame.width-leftAndRightPadding) / numberOfItemPerRow
             return CGSize.init(width: width, height: width)
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == bannerCollectionView {
+            print("xxx")
+        }else {
+            let vc = categoriesDetailsVC(nibName: "categoriesDetailsVC", bundle: nil)
+            self.navigationController!.pushViewController(vc, animated: true)
         }
     }
     

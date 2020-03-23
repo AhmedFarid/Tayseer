@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="maintenanceVC" customModule="Tayseer" customModuleProvider="target">
+            <connections>
+                <outlet property="establishinFormView" destination="fm9-m3-ifo" id="AzR-fc-BIv"/>
+                <outlet property="headerImage" destination="gdV-jq-n6W" id="Uvh-0r-ZKV"/>
+                <outlet property="maintaceFromView" destination="ZJM-q6-SgH" id="ti7-18-afo"/>
+                <outlet property="segmentView" destination="GDg-7A-po2" id="ePp-Ia-oE1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewHight" destination="g1S-06-DPv" id="X3v-mh-fO6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="pTI-z9-Uv7">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rv1-j9-b1v">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MTz-jK-OyA">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 5" translatesAutoresizingMaskIntoConstraints="NO" id="gdV-jq-n6W">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="152"/>
+                                </imageView>
+                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="GDg-7A-po2" customClass="rondedSegent" customModule="Tayseer" customModuleProvider="target">
+                                    <rect key="frame" x="108.5" y="96" width="197" height="41"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="FsF-bn-hhs"/>
+                                    </constraints>
+                                    <segments>
+                                        <segment title="Maintenance"/>
+                                        <segment title="Establishing"/>
+                                    </segments>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="segementAction:" destination="-1" eventType="valueChanged" id="8nQ-X5-hS7"/>
+                                    </connections>
+                                </segmentedControl>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZJM-q6-SgH" customClass="maintenceForm" customModule="Tayseer" customModuleProvider="target">
+                                    <rect key="frame" x="8" y="184" width="398" height="387"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="387" id="k75-6y-2va"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fm9-m3-ifo" customClass="establishingForm" customModule="Tayseer" customModuleProvider="target">
+                                    <rect key="frame" x="8" y="184" width="398" height="644"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="644" id="wCV-ij-PAa"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="ZJM-q6-SgH" secondAttribute="trailing" constant="8" id="2ZU-9M-Wjl"/>
+                                <constraint firstItem="gdV-jq-n6W" firstAttribute="leading" secondItem="MTz-jK-OyA" secondAttribute="leading" id="7hp-wN-iBr"/>
+                                <constraint firstItem="ZJM-q6-SgH" firstAttribute="leading" secondItem="MTz-jK-OyA" secondAttribute="leading" constant="8" id="AcY-4n-Oap"/>
+                                <constraint firstItem="fm9-m3-ifo" firstAttribute="top" secondItem="gdV-jq-n6W" secondAttribute="bottom" constant="32" id="Fmh-Kx-lnI"/>
+                                <constraint firstItem="fm9-m3-ifo" firstAttribute="leading" secondItem="MTz-jK-OyA" secondAttribute="leading" constant="8" id="Pga-L0-XC8"/>
+                                <constraint firstItem="GDg-7A-po2" firstAttribute="bottom" secondItem="gdV-jq-n6W" secondAttribute="bottom" constant="-16" id="Rgz-LF-faO"/>
+                                <constraint firstItem="gdV-jq-n6W" firstAttribute="top" secondItem="MTz-jK-OyA" secondAttribute="top" id="WiW-ql-XTc"/>
+                                <constraint firstAttribute="height" constant="896" id="g1S-06-DPv"/>
+                                <constraint firstItem="ZJM-q6-SgH" firstAttribute="top" secondItem="gdV-jq-n6W" secondAttribute="bottom" constant="32" id="oRD-ne-yrt"/>
+                                <constraint firstItem="GDg-7A-po2" firstAttribute="centerX" secondItem="MTz-jK-OyA" secondAttribute="centerX" id="ojI-eT-UpA"/>
+                                <constraint firstAttribute="trailing" secondItem="gdV-jq-n6W" secondAttribute="trailing" id="q8k-tH-ViG"/>
+                                <constraint firstAttribute="trailing" secondItem="fm9-m3-ifo" secondAttribute="trailing" constant="8" id="tBt-Ri-PLp"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="MTz-jK-OyA" firstAttribute="top" secondItem="Rv1-j9-b1v" secondAttribute="top" id="3sw-al-yby"/>
+                        <constraint firstAttribute="bottom" secondItem="MTz-jK-OyA" secondAttribute="bottom" id="az2-lg-gQw"/>
+                        <constraint firstAttribute="trailing" secondItem="MTz-jK-OyA" secondAttribute="trailing" id="bda-H2-xEc"/>
+                        <constraint firstItem="MTz-jK-OyA" firstAttribute="leading" secondItem="Rv1-j9-b1v" secondAttribute="leading" id="qAQ-Rr-wUf"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Rv1-j9-b1v" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3P2-eM-3LB"/>
+                <constraint firstItem="Rv1-j9-b1v" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="6YX-Xl-xgh"/>
+                <constraint firstItem="MTz-jK-OyA" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="7q3-yY-5CS"/>
+                <constraint firstAttribute="bottom" secondItem="Rv1-j9-b1v" secondAttribute="bottom" id="ElL-Pt-Wqt"/>
+                <constraint firstItem="pTI-z9-Uv7" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="NxG-5z-kSZ"/>
+                <constraint firstItem="gdV-jq-n6W" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.169643" id="fX0-My-ANz"/>
+                <constraint firstItem="Rv1-j9-b1v" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="hLs-Mn-MPk"/>
+                <constraint firstAttribute="bottom" secondItem="pTI-z9-Uv7" secondAttribute="bottom" id="lU4-CQ-RTz"/>
+                <constraint firstItem="pTI-z9-Uv7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="nFO-Zs-YuA"/>
+                <constraint firstItem="pTI-z9-Uv7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="upk-FM-eQe"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="141.96428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="1" width="375" height="812"/>
+        <image name="Rectangle 5" width="375" height="314"/>
+    </resources>
+</document>

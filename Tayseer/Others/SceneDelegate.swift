@@ -32,9 +32,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         moreTabVC.tabBarItem = UITabBarItem(title: "More",image:UIImage(named: "ellipsis-1") ,tag:4)
         let controllers = [homeTabVC,myOrdersTabVC,notificationTabVC,moreTabVC].map {
             UINavigationController(rootViewController: $0)
+            
         }
         tabBarController.tabBar.tintColor = #colorLiteral(red: 0.2141054571, green: 0.3131969273, blue: 0.6085140705, alpha: 1)
         tabBarController.viewControllers = controllers
+        
         window?.rootViewController = tabBarController
         window!.makeKeyAndVisible()
         

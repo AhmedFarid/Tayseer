@@ -22,6 +22,15 @@
 		69A8EB5A2428D02E005089D1 /* moreVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69A8EB582428D02E005089D1 /* moreVC.xib */; };
 		69A8EB5F2428E2FD005089D1 /* categoriesDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A8EB5D2428E2FD005089D1 /* categoriesDetailsVC.swift */; };
 		69A8EB602428E2FD005089D1 /* categoriesDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69A8EB5E2428E2FD005089D1 /* categoriesDetailsVC.xib */; };
+		69A8EB642428EB7F005089D1 /* categoriesDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A8EB622428EB7F005089D1 /* categoriesDetailsCell.swift */; };
+		69A8EB652428EB7F005089D1 /* categoriesDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69A8EB632428EB7F005089D1 /* categoriesDetailsCell.xib */; };
+		69A8EB6A2428F7B3005089D1 /* maintenanceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A8EB682428F7B3005089D1 /* maintenanceVC.swift */; };
+		69A8EB6B2428F7B3005089D1 /* maintenanceVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69A8EB692428F7B3005089D1 /* maintenanceVC.xib */; };
+		69B9AEFA24290A3800CFEC87 /* rondedSegent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B9AEF924290A3800CFEC87 /* rondedSegent.swift */; };
+		69B9AEFE24290D4200CFEC87 /* maintenceForm.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69B9AEFD24290D4200CFEC87 /* maintenceForm.xib */; };
+		69B9AF0024290F2400CFEC87 /* maintenceForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B9AEFF24290F2400CFEC87 /* maintenceForm.swift */; };
+		69B9AF0424291EF300CFEC87 /* establishingForm.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69B9AF0324291EF300CFEC87 /* establishingForm.xib */; };
+		69B9AF0624291F0500CFEC87 /* establishingForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B9AF0524291F0500CFEC87 /* establishingForm.swift */; };
 		69FBAB07242239E6004F5B4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FBAB06242239E6004F5B4B /* AppDelegate.swift */; };
 		69FBAB09242239E6004F5B4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FBAB08242239E6004F5B4B /* SceneDelegate.swift */; };
 		69FBAB0B242239E6004F5B4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FBAB0A242239E6004F5B4B /* ViewController.swift */; };
@@ -57,6 +66,15 @@
 		69A8EB582428D02E005089D1 /* moreVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = moreVC.xib; sourceTree = "<group>"; };
 		69A8EB5D2428E2FD005089D1 /* categoriesDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoriesDetailsVC.swift; sourceTree = "<group>"; };
 		69A8EB5E2428E2FD005089D1 /* categoriesDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = categoriesDetailsVC.xib; sourceTree = "<group>"; };
+		69A8EB622428EB7F005089D1 /* categoriesDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoriesDetailsCell.swift; sourceTree = "<group>"; };
+		69A8EB632428EB7F005089D1 /* categoriesDetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = categoriesDetailsCell.xib; sourceTree = "<group>"; };
+		69A8EB682428F7B3005089D1 /* maintenanceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = maintenanceVC.swift; sourceTree = "<group>"; };
+		69A8EB692428F7B3005089D1 /* maintenanceVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = maintenanceVC.xib; sourceTree = "<group>"; };
+		69B9AEF924290A3800CFEC87 /* rondedSegent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rondedSegent.swift; sourceTree = "<group>"; };
+		69B9AEFD24290D4200CFEC87 /* maintenceForm.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = maintenceForm.xib; sourceTree = "<group>"; };
+		69B9AEFF24290F2400CFEC87 /* maintenceForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = maintenceForm.swift; sourceTree = "<group>"; };
+		69B9AF0324291EF300CFEC87 /* establishingForm.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = establishingForm.xib; sourceTree = "<group>"; };
+		69B9AF0524291F0500CFEC87 /* establishingForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = establishingForm.swift; sourceTree = "<group>"; };
 		69FBAB03242239E6004F5B4B /* Tayseer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tayseer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69FBAB06242239E6004F5B4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69FBAB08242239E6004F5B4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,7 +119,8 @@
 		69646FC52428BD7F00A06E32 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				69A8EB5C2428E297005089D1 /* categoriesDetails */,
+				69A8EB662428F701005089D1 /* Services */,
+				69A8EB5C2428E297005089D1 /* CategoriesDetails */,
 				69A8EB5B2428E28B005089D1 /* Home */,
 			);
 			path = Home;
@@ -163,13 +182,60 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		69A8EB5C2428E297005089D1 /* categoriesDetails */ = {
+		69A8EB5C2428E297005089D1 /* CategoriesDetails */ = {
 			isa = PBXGroup;
 			children = (
+				69A8EB612428EB44005089D1 /* categoriesDetailsCell */,
 				69A8EB5D2428E2FD005089D1 /* categoriesDetailsVC.swift */,
 				69A8EB5E2428E2FD005089D1 /* categoriesDetailsVC.xib */,
 			);
-			path = categoriesDetails;
+			path = CategoriesDetails;
+			sourceTree = "<group>";
+		};
+		69A8EB612428EB44005089D1 /* categoriesDetailsCell */ = {
+			isa = PBXGroup;
+			children = (
+				69A8EB622428EB7F005089D1 /* categoriesDetailsCell.swift */,
+				69A8EB632428EB7F005089D1 /* categoriesDetailsCell.xib */,
+			);
+			path = categoriesDetailsCell;
+			sourceTree = "<group>";
+		};
+		69A8EB662428F701005089D1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				69A8EB672428F76F005089D1 /* MaintenanceAndEstablish */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		69A8EB672428F76F005089D1 /* MaintenanceAndEstablish */ = {
+			isa = PBXGroup;
+			children = (
+				69A8EB682428F7B3005089D1 /* maintenanceVC.swift */,
+				69A8EB692428F7B3005089D1 /* maintenanceVC.xib */,
+				69B9AF0224291ED700CFEC87 /* establishingForm */,
+				69B9AF0124290F2D00CFEC87 /* maintenceForm */,
+			);
+			path = MaintenanceAndEstablish;
+			sourceTree = "<group>";
+		};
+		69B9AF0124290F2D00CFEC87 /* maintenceForm */ = {
+			isa = PBXGroup;
+			children = (
+				69B9AEFD24290D4200CFEC87 /* maintenceForm.xib */,
+				69B9AEFF24290F2400CFEC87 /* maintenceForm.swift */,
+			);
+			path = maintenceForm;
+			sourceTree = "<group>";
+		};
+		69B9AF0224291ED700CFEC87 /* establishingForm */ = {
+			isa = PBXGroup;
+			children = (
+				69B9AF0324291EF300CFEC87 /* establishingForm.xib */,
+				69B9AF0524291F0500CFEC87 /* establishingForm.swift */,
+			);
+			path = establishingForm;
 			sourceTree = "<group>";
 		};
 		69FBAAFA242239E5004F5B4B = {
@@ -283,6 +349,7 @@
 			children = (
 				69FBAB2A242245C3004F5B4B /* coustomRoundedButton.swift */,
 				69FBAB2E24224B9C004F5B4B /* textimage.swift */,
+				69B9AEF924290A3800CFEC87 /* rondedSegent.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -386,17 +453,21 @@
 				69A8EB602428E2FD005089D1 /* categoriesDetailsVC.xib in Resources */,
 				69FBAB3424224EAA004F5B4B /* Cairo-Regular.ttf in Resources */,
 				69A8EB502428CFB6005089D1 /* myOrdersVC.xib in Resources */,
+				69A8EB6B2428F7B3005089D1 /* maintenanceVC.xib in Resources */,
 				69FBAB13242239EA004F5B4B /* LaunchScreen.storyboard in Resources */,
 				69646FD22428BFC600A06E32 /* categoryCell.xib in Resources */,
 				69A8EB552428CFF7005089D1 /* notificationVC.xib in Resources */,
+				69A8EB652428EB7F005089D1 /* categoriesDetailsCell.xib in Resources */,
 				69FBAB10242239EA004F5B4B /* Assets.xcassets in Resources */,
 				69FBAB3324224EAA004F5B4B /* Cairo-SemiBold.ttf in Resources */,
+				69B9AF0424291EF300CFEC87 /* establishingForm.xib in Resources */,
 				69A8EB5A2428D02E005089D1 /* moreVC.xib in Resources */,
 				69FBAB3924225D85004F5B4B /* signupVC.xib in Resources */,
 				69FBAB292422432A004F5B4B /* loginVC.xib in Resources */,
 				69646FC92428BDA500A06E32 /* homeVC.xib in Resources */,
 				69FBAB0E242239E6004F5B4B /* Main.storyboard in Resources */,
 				69FBAB3524224EAA004F5B4B /* Cairo-Bold.ttf in Resources */,
+				69B9AEFE24290D4200CFEC87 /* maintenceForm.xib in Resources */,
 				69646FCD2428BF9F00A06E32 /* bannerCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,8 +521,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69B9AEFA24290A3800CFEC87 /* rondedSegent.swift in Sources */,
 				69646FD12428BFC600A06E32 /* categoryCell.swift in Sources */,
+				69B9AF0024290F2400CFEC87 /* maintenceForm.swift in Sources */,
 				69FBAB3824225D85004F5B4B /* signupVC.swift in Sources */,
+				69A8EB642428EB7F005089D1 /* categoriesDetailsCell.swift in Sources */,
 				69646FCC2428BF9F00A06E32 /* bannerCell.swift in Sources */,
 				69FBAB0B242239E6004F5B4B /* ViewController.swift in Sources */,
 				69FBAB2F24224B9C004F5B4B /* textimage.swift in Sources */,
@@ -461,8 +535,10 @@
 				69A8EB5F2428E2FD005089D1 /* categoriesDetailsVC.swift in Sources */,
 				69FBAB07242239E6004F5B4B /* AppDelegate.swift in Sources */,
 				69A8EB592428D02E005089D1 /* moreVC.swift in Sources */,
+				69B9AF0624291F0500CFEC87 /* establishingForm.swift in Sources */,
 				69FBAB282422432A004F5B4B /* loginVC.swift in Sources */,
 				69FBAB2B242245C3004F5B4B /* coustomRoundedButton.swift in Sources */,
+				69A8EB6A2428F7B3005089D1 /* maintenanceVC.swift in Sources */,
 				69646FC82428BDA500A06E32 /* homeVC.swift in Sources */,
 				69FBAB09242239E6004F5B4B /* SceneDelegate.swift in Sources */,
 			);

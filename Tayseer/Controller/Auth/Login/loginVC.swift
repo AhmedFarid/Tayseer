@@ -15,13 +15,10 @@ class loginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setUpNavColore(isTranslucent: true, backColor: #colorLiteral(red: 0.2141054571, green: 0.3131969273, blue: 0.6085140705, alpha: 1),navColor: #colorLiteral(red: 0.2141054571, green: 0.3131969273, blue: 0.6085140705, alpha: 1), barStyle: .default, cart: false)
+        
         imageText()
     }
     
-//    override var preferredStatusBarStyle: UIStatusBarStyle {
-//           return .darkContent
-//       }
     
 
     func imageText() {

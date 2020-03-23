@@ -12,22 +12,15 @@ import UIKit
 
 extension UIViewController {
     
-    
-    func setUpNavColore(isTranslucent: Bool,backColor: UIColor, navColor: UIColor, barStyle: UIBarStyle, cart: Bool){
+    func setUpNavColore(_ isTranslucent: Bool){
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = isTranslucent
-        self.navigationController?.navigationBar.barStyle = barStyle
-        self.navigationController?.navigationBar.tintColor = backColor
-        self.navigationController?.navigationBar.barTintColor = navColor
-        
-        switch cart {
-        case true:
-            let rightBarButtonItem = UIBarButtonItem.init(image: UIImage(named: "Group 105-2"), style: .done, target: self, action: #selector(showCart))
-            self.navigationItem.rightBarButtonItem = rightBarButtonItem
-        default:
-            print("no")
-        }
+        self.navigationController?.navigationBar.barStyle = .black
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.2156862745, green: 0.2980392157, blue: 0.6078431373, alpha: 1)
+        self.navigationController?.navigationBar.tintColor = .white
+        let rightBarButtonItem = UIBarButtonItem.init(image: UIImage(named: "Group 105-2"), style: .done, target: self, action: #selector(showCart))
+        self.navigationItem.rightBarButtonItem = rightBarButtonItem
     }
     
     @objc func showCart() {

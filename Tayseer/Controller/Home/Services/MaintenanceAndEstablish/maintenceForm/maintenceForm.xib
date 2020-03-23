@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="maintenceForm" customModule="Tayseer" customModuleProvider="target">
+            <connections>
+                <outlet property="decratibonTV" destination="8au-Ie-sxj" id="2j3-Fb-Sqn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="a0s-pM-glN">
+            <rect key="frame" x="0.0" y="0.0" width="447" height="387"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Services Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rFo-1t-vZn">
+                    <rect key="frame" x="8" y="52" width="431" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="MnY-xn-gfP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Choose date and time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Odh-QV-Ap7">
+                    <rect key="frame" x="8" y="118" width="431" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="acN-JG-7au"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJP-Ni-RKX">
+                    <rect key="frame" x="409.5" y="66" width="21.5" height="22"/>
+                    <state key="normal" image="Group 1755"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXm-KS-jJr" customClass="coustomRoundedButton" customModule="Tayseer" customModuleProvider="target">
+                    <rect key="frame" x="91" y="326" width="265" height="45"/>
+                    <color key="backgroundColor" red="0.21410545710000001" green="0.31319692729999998" blue="0.60851407049999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="N5t-vs-cUf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                    <state key="normal" title="Next">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8au-Ie-sxj">
+                    <rect key="frame" x="8" y="184" width="431" height="134"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="WXm-KS-jJr" firstAttribute="centerX" secondItem="a0s-pM-glN" secondAttribute="centerX" id="0K6-aI-861"/>
+                <constraint firstItem="8au-Ie-sxj" firstAttribute="leading" secondItem="Lzf-th-YUe" secondAttribute="leading" constant="8" id="5hO-Sn-P5B"/>
+                <constraint firstItem="Odh-QV-Ap7" firstAttribute="leading" secondItem="rFo-1t-vZn" secondAttribute="leading" id="DC5-Aw-zpp"/>
+                <constraint firstItem="Lzf-th-YUe" firstAttribute="trailing" secondItem="8au-Ie-sxj" secondAttribute="trailing" constant="8" id="F6R-lm-beL"/>
+                <constraint firstItem="rFo-1t-vZn" firstAttribute="top" secondItem="Lzf-th-YUe" secondAttribute="top" constant="8" id="GLA-sP-DON"/>
+                <constraint firstItem="Lzf-th-YUe" firstAttribute="trailing" secondItem="rFo-1t-vZn" secondAttribute="trailing" constant="8" id="LGb-hD-znw"/>
+                <constraint firstItem="Odh-QV-Ap7" firstAttribute="trailing" secondItem="rFo-1t-vZn" secondAttribute="trailing" id="OEi-yf-f1d"/>
+                <constraint firstItem="WXm-KS-jJr" firstAttribute="top" secondItem="8au-Ie-sxj" secondAttribute="bottom" constant="8" id="Wv0-sT-VTa"/>
+                <constraint firstItem="rFo-1t-vZn" firstAttribute="leading" secondItem="Lzf-th-YUe" secondAttribute="leading" constant="8" id="ZdG-Ul-bva"/>
+                <constraint firstAttribute="bottom" secondItem="WXm-KS-jJr" secondAttribute="bottom" constant="16" id="eH0-K0-yCj"/>
+                <constraint firstItem="WXm-KS-jJr" firstAttribute="width" secondItem="a0s-pM-glN" secondAttribute="width" multiplier="0.592342" id="i8I-uf-xBQ"/>
+                <constraint firstItem="UJP-Ni-RKX" firstAttribute="trailing" secondItem="rFo-1t-vZn" secondAttribute="trailing" constant="-8" id="jd1-p3-lys"/>
+                <constraint firstItem="Odh-QV-Ap7" firstAttribute="top" secondItem="rFo-1t-vZn" secondAttribute="bottom" constant="16" id="w8l-Ot-3eO"/>
+                <constraint firstItem="UJP-Ni-RKX" firstAttribute="centerY" secondItem="rFo-1t-vZn" secondAttribute="centerY" id="wkO-uj-V11"/>
+                <constraint firstItem="8au-Ie-sxj" firstAttribute="top" secondItem="Odh-QV-Ap7" secondAttribute="bottom" constant="16" id="xiA-a9-7De"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Lzf-th-YUe"/>
+            <point key="canvasLocation" x="361.59420289855075" y="61.272321428571423"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Group 1755" width="21.5" height="21.5"/>
+    </resources>
+</document>
