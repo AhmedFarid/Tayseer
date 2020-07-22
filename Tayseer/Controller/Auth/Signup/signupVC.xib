@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,7 +14,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="signupVC" customModule="Tayseer" customModuleProvider="target">
             <connections>
-                <outlet property="address" destination="eRu-3X-nhZ" id="YVO-o9-a53"/>
                 <outlet property="email" destination="UxT-h8-6WR" id="qXZ-3u-n0Q"/>
                 <outlet property="fullname" destination="tWi-Sw-Wh1" id="FQl-MO-ASs"/>
                 <outlet property="password" destination="O9L-89-ipt" id="6zV-KF-mpb"/>
@@ -34,7 +33,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="89h-es-VCj">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="750"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="699"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 2" translatesAutoresizingMaskIntoConstraints="NO" id="1zH-vO-Sn4">
                                     <rect key="frame" x="93.5" y="32" width="227" height="278"/>
@@ -45,18 +44,18 @@
                                         <constraint firstAttribute="height" constant="50" id="gDw-LX-3SJ"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                 </textField>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O9L-89-ipt">
-                                    <rect key="frame" x="16" y="606" width="382" height="50"/>
+                                    <rect key="frame" x="16" y="540" width="382" height="50"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="50" id="HFR-Kj-7Fo"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 </textField>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28D-fN-wIn" customClass="coustomRoundedButton" customModule="Tayseer" customModuleProvider="target">
-                                    <rect key="frame" x="75.5" y="688" width="263" height="45"/>
+                                    <rect key="frame" x="75.5" y="622" width="263" height="45"/>
                                     <color key="backgroundColor" red="0.21410545710000001" green="0.31319692729999998" blue="0.60851407049999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="45" id="Kvv-RY-hCN"/>
@@ -70,22 +69,17 @@
                                             <real key="value" value="2"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="singUpBTN:" destination="-1" eventType="touchUpInside" id="7o4-ck-OR1"/>
+                                    </connections>
                                 </button>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UxT-h8-6WR">
-                                    <rect key="frame" x="16" y="540" width="382" height="50"/>
+                                    <rect key="frame" x="16" y="474" width="382" height="50"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="50" id="aas-Ar-ago"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                </textField>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eRu-3X-nhZ">
-                                    <rect key="frame" x="16" y="474" width="382" height="50"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="50" id="GeC-es-PXE"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                 </textField>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tWi-Sw-Wh1">
                                     <rect key="frame" x="16" y="342" width="382" height="50"/>
@@ -99,20 +93,17 @@
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="28D-fN-wIn" firstAttribute="top" secondItem="O9L-89-ipt" secondAttribute="bottom" constant="32" id="1JV-iT-E4r"/>
+                                <constraint firstAttribute="bottom" secondItem="28D-fN-wIn" secondAttribute="bottom" constant="32" id="2qr-YL-IYg"/>
                                 <constraint firstItem="1zH-vO-Sn4" firstAttribute="top" secondItem="89h-es-VCj" secondAttribute="top" constant="32" id="6pq-jb-bZ3"/>
                                 <constraint firstItem="UxT-h8-6WR" firstAttribute="leading" secondItem="tWi-Sw-Wh1" secondAttribute="leading" id="76q-eK-F9E"/>
                                 <constraint firstAttribute="trailing" secondItem="tWi-Sw-Wh1" secondAttribute="trailing" constant="16" id="ACT-j1-9FL"/>
-                                <constraint firstItem="eRu-3X-nhZ" firstAttribute="trailing" secondItem="tWi-Sw-Wh1" secondAttribute="trailing" id="Bqa-ip-8Of"/>
                                 <constraint firstItem="Xtf-Sz-062" firstAttribute="leading" secondItem="tWi-Sw-Wh1" secondAttribute="leading" id="N5A-pK-30P"/>
-                                <constraint firstItem="UxT-h8-6WR" firstAttribute="top" secondItem="eRu-3X-nhZ" secondAttribute="bottom" constant="16" id="N60-cS-A9m"/>
                                 <constraint firstItem="1zH-vO-Sn4" firstAttribute="centerX" secondItem="89h-es-VCj" secondAttribute="centerX" id="RzQ-9w-f8x"/>
-                                <constraint firstItem="eRu-3X-nhZ" firstAttribute="top" secondItem="Xtf-Sz-062" secondAttribute="bottom" constant="16" id="W5z-zG-UAn"/>
                                 <constraint firstItem="Xtf-Sz-062" firstAttribute="top" secondItem="tWi-Sw-Wh1" secondAttribute="bottom" constant="16" id="YAT-i0-782"/>
                                 <constraint firstItem="O9L-89-ipt" firstAttribute="top" secondItem="UxT-h8-6WR" secondAttribute="bottom" constant="16" id="YhO-Zi-Hbs"/>
-                                <constraint firstAttribute="height" constant="750" id="YwJ-Hu-KOc"/>
                                 <constraint firstItem="tWi-Sw-Wh1" firstAttribute="top" secondItem="1zH-vO-Sn4" secondAttribute="bottom" constant="32" id="agp-6c-MTW"/>
                                 <constraint firstItem="O9L-89-ipt" firstAttribute="trailing" secondItem="tWi-Sw-Wh1" secondAttribute="trailing" id="bBp-O5-jNG"/>
-                                <constraint firstItem="eRu-3X-nhZ" firstAttribute="leading" secondItem="tWi-Sw-Wh1" secondAttribute="leading" id="tbn-jR-wP4"/>
+                                <constraint firstItem="UxT-h8-6WR" firstAttribute="top" secondItem="Xtf-Sz-062" secondAttribute="bottom" constant="16" id="dDd-dK-2c0"/>
                                 <constraint firstItem="28D-fN-wIn" firstAttribute="centerX" secondItem="89h-es-VCj" secondAttribute="centerX" id="vD2-80-gUr"/>
                                 <constraint firstItem="tWi-Sw-Wh1" firstAttribute="leading" secondItem="89h-es-VCj" secondAttribute="leading" constant="16" id="wpn-31-n3W"/>
                                 <constraint firstItem="UxT-h8-6WR" firstAttribute="trailing" secondItem="tWi-Sw-Wh1" secondAttribute="trailing" id="xWX-9V-laz"/>

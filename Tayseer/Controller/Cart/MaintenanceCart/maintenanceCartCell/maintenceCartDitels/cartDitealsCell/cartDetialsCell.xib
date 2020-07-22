@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="89" id="KGk-i7-Jjw" customClass="cartDetialsCell" customModule="Tayseer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="376" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSh-ft-vWP">
+                        <rect key="frame" x="8" y="8" width="360" height="32"/>
+                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcn-dM-3sr">
+                        <rect key="frame" x="8" y="48" width="360" height="32"/>
+                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HSh-ft-vWP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="2Jr-me-OV7"/>
+                    <constraint firstItem="HSh-ft-vWP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="3v4-hw-LNQ"/>
+                    <constraint firstAttribute="trailing" secondItem="HSh-ft-vWP" secondAttribute="trailing" constant="8" id="CRh-nO-1rf"/>
+                    <constraint firstAttribute="trailing" secondItem="bcn-dM-3sr" secondAttribute="trailing" constant="8" id="RLf-xz-XKo"/>
+                    <constraint firstItem="bcn-dM-3sr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Tmr-zj-ODF"/>
+                    <constraint firstItem="bcn-dM-3sr" firstAttribute="top" secondItem="HSh-ft-vWP" secondAttribute="bottom" constant="8" id="VM4-j3-ONT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="serviceName" destination="HSh-ft-vWP" id="QHf-CJ-8xj"/>
+                <outlet property="servicePrice" destination="bcn-dM-3sr" id="8ye-cz-otu"/>
+            </connections>
+            <point key="canvasLocation" x="169.56521739130437" y="167.74553571428569"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -11,6 +11,9 @@ import UIKit
 class categoriesDetailsCell: UITableViewCell {
 
     @IBOutlet weak var backView: UIView!
+    @IBOutlet weak var catImage: UIImageView!
+    @IBOutlet weak var productName: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         self.backView.layer.cornerRadius = 8

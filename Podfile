@@ -11,5 +11,9 @@ target 'Tayseer' do
   pod 'MOLH'
 	pod 'Alamofire'
   pod 'NVActivityIndicatorView'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'Firebase/Messaging'
 
 end

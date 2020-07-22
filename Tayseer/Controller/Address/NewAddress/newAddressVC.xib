@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="newAddressVC" customModule="Tayseer" customModuleProvider="target">
+            <connections>
+                <outlet property="address" destination="J9o-Pt-XQe" id="kuR-eU-V06"/>
+                <outlet property="apartmeentNo" destination="eeD-Vo-Qds" id="Bo1-u0-bjB"/>
+                <outlet property="area" destination="4Xb-ha-rO3" id="cJs-E9-LLp"/>
+                <outlet property="buildingNo" destination="Hwk-E9-8df" id="UpF-GQ-Rrm"/>
+                <outlet property="city" destination="jV6-2x-0ks" id="72o-Hv-mxL"/>
+                <outlet property="defaultAddress" destination="kQH-cq-Ln1" id="Q8n-qM-iFZ"/>
+                <outlet property="editOrAdd" destination="Cxm-Ol-xnc" id="NSo-hc-USY"/>
+                <outlet property="floor" destination="4kD-eh-Qa2" id="LZ8-LY-C3V"/>
+                <outlet property="fullName" destination="mEx-rx-43A" id="q0U-ds-2vw"/>
+                <outlet property="phone" destination="jYX-Sj-2iK" id="bYJ-4y-dKO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="zones" destination="cfb-3s-q45" id="5zj-FM-KEZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="qPD-6h-tZu">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SeP-ai-kJN">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZCF-ZQ-c3P">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="772"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 5" translatesAutoresizingMaskIntoConstraints="NO" id="MIt-uj-6oh">
+                                    <rect key="frame" x="0.0" y="-32" width="414" height="152"/>
+                                </imageView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="4RC-ef-jON">
+                                    <rect key="frame" x="8" y="152" width="398" height="446"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mEx-rx-43A">
+                                            <rect key="frame" x="0.0" y="0.0" width="398" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="fYP-A2-rkp"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jYX-Sj-2iK">
+                                            <rect key="frame" x="0.0" y="66" width="398" height="50"/>
+                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jV6-2x-0ks">
+                                            <rect key="frame" x="0.0" y="132" width="398" height="50"/>
+                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Xb-ha-rO3">
+                                            <rect key="frame" x="0.0" y="198" width="398" height="50"/>
+                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Area" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cfb-3s-q45">
+                                            <rect key="frame" x="0.0" y="264" width="398" height="50"/>
+                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address Info" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J9o-Pt-XQe">
+                                            <rect key="frame" x="0.0" y="330" width="398" height="50"/>
+                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="bp0-I1-XVc">
+                                            <rect key="frame" x="0.0" y="396" width="398" height="50"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Building no." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hwk-E9-8df">
+                                                    <rect key="frame" x="0.0" y="0.0" width="191" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="r5k-w1-9Za"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Floor no." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4kD-eh-Qa2">
+                                                    <rect key="frame" x="207" y="0.0" width="191" height="50"/>
+                                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Apartment no." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eeD-Vo-Qds">
+                                    <rect key="frame" x="8" y="614" width="191" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="cLM-SY-g6R"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="hb3-0g-bQf">
+                                    <rect key="frame" x="8" y="696" width="398" height="44"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cxm-Ol-xnc" customClass="coustomRoundedButton" customModule="Tayseer" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="179" height="44"/>
+                                            <color key="backgroundColor" red="0.21410545710000001" green="0.31319692729999998" blue="0.60851407049999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                            <state key="normal" title="Add">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="2"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="addBtn:" destination="-1" eventType="touchUpInside" id="NoF-Yq-JyD"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQH-cq-Ln1" customClass="coustomRoundedButton" customModule="Tayseer" customModuleProvider="target">
+                                            <rect key="frame" x="219" y="0.0" width="179" height="44"/>
+                                            <color key="backgroundColor" red="0.21410545710000001" green="0.31319692729999998" blue="0.60851407049999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
+                                            <state key="normal" title="Make default address">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="2"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="defualtAddreeBTNAction:" destination="-1" eventType="touchUpInside" id="RQ7-ZJ-Qh1"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="MIt-uj-6oh" firstAttribute="top" secondItem="ZCF-ZQ-c3P" secondAttribute="top" constant="-32" id="2xJ-Dt-hXX"/>
+                                <constraint firstItem="MIt-uj-6oh" firstAttribute="leading" secondItem="ZCF-ZQ-c3P" secondAttribute="leading" id="DCx-8C-CYu"/>
+                                <constraint firstItem="eeD-Vo-Qds" firstAttribute="trailing" secondItem="Hwk-E9-8df" secondAttribute="trailing" id="EOr-GU-9g8"/>
+                                <constraint firstItem="eeD-Vo-Qds" firstAttribute="top" secondItem="4RC-ef-jON" secondAttribute="bottom" constant="16" id="FeZ-Xb-oth"/>
+                                <constraint firstAttribute="trailing" secondItem="MIt-uj-6oh" secondAttribute="trailing" id="GJB-bg-fWr"/>
+                                <constraint firstItem="4RC-ef-jON" firstAttribute="top" secondItem="MIt-uj-6oh" secondAttribute="bottom" constant="32" id="TGu-bi-1rG"/>
+                                <constraint firstAttribute="bottom" secondItem="hb3-0g-bQf" secondAttribute="bottom" constant="32" id="bGp-FN-NVP"/>
+                                <constraint firstItem="eeD-Vo-Qds" firstAttribute="leading" secondItem="Hwk-E9-8df" secondAttribute="leading" id="dyk-dV-xKu"/>
+                                <constraint firstItem="hb3-0g-bQf" firstAttribute="top" secondItem="eeD-Vo-Qds" secondAttribute="bottom" constant="32" id="h4L-ZV-me8"/>
+                                <constraint firstItem="hb3-0g-bQf" firstAttribute="trailing" secondItem="mEx-rx-43A" secondAttribute="trailing" id="khA-jh-eRI"/>
+                                <constraint firstAttribute="trailing" secondItem="4RC-ef-jON" secondAttribute="trailing" constant="8" id="kl1-eU-HzO"/>
+                                <constraint firstItem="4RC-ef-jON" firstAttribute="leading" secondItem="ZCF-ZQ-c3P" secondAttribute="leading" constant="8" id="oJN-Lv-p4Z"/>
+                                <constraint firstItem="hb3-0g-bQf" firstAttribute="leading" secondItem="mEx-rx-43A" secondAttribute="leading" id="vRt-5l-pzo"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ZCF-ZQ-c3P" secondAttribute="bottom" id="Ass-WU-yAz"/>
+                        <constraint firstAttribute="trailing" secondItem="ZCF-ZQ-c3P" secondAttribute="trailing" id="BlV-zW-wc0"/>
+                        <constraint firstItem="ZCF-ZQ-c3P" firstAttribute="leading" secondItem="SeP-ai-kJN" secondAttribute="leading" id="GkC-au-PgJ"/>
+                        <constraint firstItem="ZCF-ZQ-c3P" firstAttribute="top" secondItem="SeP-ai-kJN" secondAttribute="top" id="mpw-dd-So6"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="qPD-6h-tZu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="23V-OT-a1y"/>
+                <constraint firstAttribute="bottom" secondItem="SeP-ai-kJN" secondAttribute="bottom" id="70J-A2-3Qz"/>
+                <constraint firstItem="SeP-ai-kJN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="EAr-6g-77d"/>
+                <constraint firstItem="qPD-6h-tZu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Hcc-WI-Icy"/>
+                <constraint firstItem="SeP-ai-kJN" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Nw5-j8-swZ"/>
+                <constraint firstItem="qPD-6h-tZu" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Ruy-2m-hZq"/>
+                <constraint firstItem="ZCF-ZQ-c3P" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="qIZ-Ts-ClJ"/>
+                <constraint firstItem="SeP-ai-kJN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qqL-lO-FiH"/>
+                <constraint firstItem="MIt-uj-6oh" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.169643" id="sIp-eq-Zme"/>
+                <constraint firstAttribute="bottom" secondItem="qPD-6h-tZu" secondAttribute="bottom" id="uqO-Jx-Bop"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="141.96428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="1" width="375" height="812"/>
+        <image name="Rectangle 5" width="375" height="314"/>
+    </resources>
+</document>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="addressLsitVC" customModule="Tayseer" customModuleProvider="target">
+            <connections>
+                <outlet property="tabelVIew" destination="cNZ-8z-j7q" id="mOd-15-2A1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="dVI-04-v04">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 5" translatesAutoresizingMaskIntoConstraints="NO" id="yxP-NW-EWo">
+                    <rect key="frame" x="0.0" y="-32" width="414" height="152"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uj-iR-TyH">
+                    <rect key="frame" x="8" y="120" width="140" height="44"/>
+                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                    <state key="normal" title="+ Add New Address">
+                        <color key="titleColor" red="0.2156862745" green="0.31372549020000001" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="addNewBTN:" destination="-1" eventType="touchUpInside" id="bFs-CV-IWr"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cNZ-8z-j7q">
+                    <rect key="frame" x="0.0" y="164" width="414" height="698"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ius-l0-oHj">
+                    <rect key="frame" x="8" y="52" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="NZH-gE-RXF"/>
+                        <constraint firstAttribute="width" constant="25" id="SM3-3e-kN4"/>
+                    </constraints>
+                    <state key="normal" image="cancel-music"/>
+                    <connections>
+                        <action selector="dissmisBtn:" destination="-1" eventType="touchUpInside" id="SOw-bO-yJg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="7uj-iR-TyH" firstAttribute="top" secondItem="yxP-NW-EWo" secondAttribute="bottom" id="9er-56-oKp"/>
+                <constraint firstItem="cNZ-8z-j7q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="CMz-nt-Y5C"/>
+                <constraint firstItem="dVI-04-v04" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="CSs-c2-u1g"/>
+                <constraint firstItem="7uj-iR-TyH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="Gr5-Su-eP2"/>
+                <constraint firstItem="yxP-NW-EWo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-32" id="NWz-bF-0Mq"/>
+                <constraint firstItem="cNZ-8z-j7q" firstAttribute="top" secondItem="7uj-iR-TyH" secondAttribute="bottom" id="Q8b-Fa-U6W"/>
+                <constraint firstItem="yxP-NW-EWo" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="RfW-Zw-Egn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="cNZ-8z-j7q" secondAttribute="bottom" id="Ul0-76-f0r"/>
+                <constraint firstAttribute="bottom" secondItem="dVI-04-v04" secondAttribute="bottom" id="Wdy-cc-xDr"/>
+                <constraint firstItem="dVI-04-v04" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="aus-cu-1qS"/>
+                <constraint firstItem="ius-l0-oHj" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="lZZ-Fr-FMn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cNZ-8z-j7q" secondAttribute="trailing" id="qQg-NG-x5k"/>
+                <constraint firstItem="dVI-04-v04" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qiB-8h-nGt"/>
+                <constraint firstItem="ius-l0-oHj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="qxk-dw-Hed"/>
+                <constraint firstItem="yxP-NW-EWo" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.169643" id="svl-Gf-DE1"/>
+                <constraint firstItem="yxP-NW-EWo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="uI5-Ah-e0u"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="1" width="375" height="812"/>
+        <image name="Rectangle 5" width="375" height="314"/>
+        <image name="cancel-music" width="10.5" height="10.5"/>
+    </resources>
+</document>

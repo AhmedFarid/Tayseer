@@ -6,11 +6,25 @@
 //  Copyright © 2020 E-bakers. All rights reserved.
 //
 
+protocol maintenceFormDelegate {
+    func didTapButton()
+    func didTapNextButton()
+}
+
+
 import UIKit
 
 class maintenceForm: UIView {
     
+    @IBOutlet weak var servicesTypeTF: UITextField!
+    @IBOutlet weak var DateTIme: UITextField!
     @IBOutlet weak var decratibonTV: UITextView!
+    @IBOutlet weak var totalPrice: UILabel!
+    
+    
+    var delegate: maintenceFormDelegate?
+    private var datePiker: UIDatePicker?
+    
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -24,8 +38,24 @@ class maintenceForm: UIView {
         decratibonTV.delegate = self
         decratibonTV.text = "Work description"
         decratibonTV.textColor = UIColor.lightGray
+        decratibonTV.textContainerInset = UIEdgeInsets(top: 2, left: 2, bottom: 2, right: 2)
+        createDatePiker()
         
     }
+    
+    func createDatePiker(){
+        datePiker = UIDatePicker()
+        datePiker?.datePickerMode = .dateAndTime
+        datePiker?.addTarget(self, action: #selector(maintenceForm.dateChanged(datePiker:)), for: .valueChanged)
+        DateTIme.inputView = datePiker
+        
+    }
+    
+    @objc func dateChanged(datePiker: UIDatePicker) {
+           let dateFormater = DateFormatter()
+           dateFormater.dateFormat = "yyyy-MM-dd HH:mm:ss"
+           DateTIme.text = dateFormater.string(from: datePiker.date)
+       }
     
     func loadViewFromNib() -> UIView {
         let bundle  = Bundle.init(for: type(of: self))
@@ -39,13 +69,13 @@ class maintenceForm: UIView {
     }
     
    
-       
-        
-    
-    
-    
-    
-    
+    @IBAction func servicesTypeBTN(_ sender: Any) {
+        delegate?.didTapButton()
+    }
+   
+    @IBAction func nextBtn(_ sender: Any) {
+        delegate?.didTapNextButton()
+    }
 }
 
 extension maintenceForm: UITextViewDelegate {

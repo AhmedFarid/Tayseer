@@ -7,24 +7,74 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
-class notificationVC: UIViewController {
+class notificationVC: UIViewController,NVActivityIndicatorViewable {
 
+    @IBOutlet weak var tabelView: UITableView!
+    
+    var notification = [notificationData]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tabelView.register(UINib(nibName: "notificaitonsCell", bundle: nil), forCellReuseIdentifier: "cell")
+        tabelView.delegate = self
+        tabelView.dataSource = self
+        
+        tabelView.rowHeight = UITableView.automaticDimension
+        tabelView.estimatedRowHeight = UITableView.automaticDimension
+        
+        orderEmrgeicySHandelRefresh()
+        
+        setUpNavColore(false, "Notificaitons")
 
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        refesHcart()
+    }
+    
+    func orderEmrgeicySHandelRefresh(){
+        loaderHelper()
+        notificatiionApi.listNotificatiion{ (error,success,notification) in
+            if let notification = notification{
+                self.notification = notification.data ?? []
+                print(notification)
+                self.tabelView.reloadData()
+                self.stopAnimating()
+            }
+            self.stopAnimating()
+        }
     }
 
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }
+
+extension notificationVC: UITableViewDelegate, UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return notification.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? notificaitonsCell {
+            
+            cell.configureCell(orderList:  notification[indexPath.row])
+            cell.selectionStyle = UITableViewCell.SelectionStyle.none
+            return cell
+        }else {
+            return notificaitonsCell()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+}
+

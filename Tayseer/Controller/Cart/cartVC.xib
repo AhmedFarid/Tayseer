@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="cartVC" customModule="Tayseer" customModuleProvider="target">
+            <connections>
+                <outlet property="maintenanceCartForm" destination="TQ8-fv-jCR" id="NNd-GB-hqq"/>
+                <outlet property="productCartForm" destination="mQK-Xn-qNC" id="3Hb-54-kcu"/>
+                <outlet property="segmentView" destination="KTo-Pc-7H7" id="bge-t5-vZn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="1XU-eg-UIQ">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 5" translatesAutoresizingMaskIntoConstraints="NO" id="6kL-nP-vNf">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="102"/>
+                </imageView>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KTo-Pc-7H7" customClass="rondedSegent" customModule="Tayseer" customModuleProvider="target">
+                    <rect key="frame" x="108.5" y="46" width="197" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="84C-AQ-OLP"/>
+                    </constraints>
+                    <segments>
+                        <segment title="Product"/>
+                        <segment title="Maintenance"/>
+                    </segments>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="segementAction:" destination="-1" eventType="valueChanged" id="LJ1-mm-dhP"/>
+                    </connections>
+                </segmentedControl>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TQ8-fv-jCR" customClass="maintenanceCart" customModule="Tayseer" customModuleProvider="target">
+                    <rect key="frame" x="8" y="110" width="398" height="760"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mQK-Xn-qNC" customClass="productCart" customModule="Tayseer" customModuleProvider="target">
+                    <rect key="frame" x="8" y="110" width="398" height="760"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mQK-Xn-qNC" secondAttribute="trailing" constant="8" id="Au8-r3-fi9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TQ8-fv-jCR" secondAttribute="trailing" constant="8" id="DAB-Qd-lWo"/>
+                <constraint firstItem="KTo-Pc-7H7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Fhc-dX-K6q"/>
+                <constraint firstItem="TQ8-fv-jCR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="QOw-dJ-cqu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="1XU-eg-UIQ" secondAttribute="bottom" id="RdF-6A-Wn2"/>
+                <constraint firstItem="6kL-nP-vNf" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="TRH-bJ-rBL"/>
+                <constraint firstItem="mQK-Xn-qNC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="UD1-Za-8zT"/>
+                <constraint firstItem="TQ8-fv-jCR" firstAttribute="top" secondItem="6kL-nP-vNf" secondAttribute="bottom" constant="8" id="UVl-JO-0pV"/>
+                <constraint firstItem="6kL-nP-vNf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Us0-r8-gum"/>
+                <constraint firstItem="1XU-eg-UIQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="WU5-vx-6KK"/>
+                <constraint firstItem="6kL-nP-vNf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bPe-1L-2q7"/>
+                <constraint firstItem="mQK-Xn-qNC" firstAttribute="top" secondItem="6kL-nP-vNf" secondAttribute="bottom" constant="8" id="cZb-KJ-fC8"/>
+                <constraint firstItem="1XU-eg-UIQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dur-eA-2BN"/>
+                <constraint firstItem="mQK-Xn-qNC" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="8" id="kRP-At-IQn"/>
+                <constraint firstItem="TQ8-fv-jCR" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="8" id="nRU-C0-4cO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1XU-eg-UIQ" secondAttribute="trailing" id="phq-uq-3Ku"/>
+                <constraint firstItem="6kL-nP-vNf" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.113839" id="vV7-Nc-sMe"/>
+                <constraint firstItem="KTo-Pc-7H7" firstAttribute="bottom" secondItem="6kL-nP-vNf" secondAttribute="bottom" constant="-16" id="x4Q-P5-McP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="141.96428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="1" width="375" height="812"/>
+        <image name="Rectangle 5" width="375" height="314"/>
+    </resources>
+</document>

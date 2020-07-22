@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="productVC" customModule="Tayseer" customModuleProvider="target">
+            <connections>
+                <outlet property="segmentView" destination="hJv-Uj-ZoI" id="UVI-5I-8Dh"/>
+                <outlet property="tabelView" destination="DNV-c6-pIz" id="8gE-e7-Hqa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="xtM-FW-f09">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 5" translatesAutoresizingMaskIntoConstraints="NO" id="AOn-LC-45o">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="179"/>
+                </imageView>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hJv-Uj-ZoI" customClass="rondedSegent" customModule="Tayseer" customModuleProvider="target">
+                    <rect key="frame" x="108.5" y="123" width="197" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="iJn-gc-yyQ"/>
+                    </constraints>
+                    <segments>
+                        <segment title="Maintenance"/>
+                        <segment title="Establishing"/>
+                    </segments>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="segementAction:" destination="-1" eventType="valueChanged" id="cpF-rC-NDd"/>
+                    </connections>
+                </segmentedControl>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DNV-c6-pIz">
+                    <rect key="frame" x="8" y="187" width="398" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DNV-c6-pIz" secondAttribute="trailing" constant="8" id="3Xb-1p-P6f"/>
+                <constraint firstItem="hJv-Uj-ZoI" firstAttribute="bottom" secondItem="AOn-LC-45o" secondAttribute="bottom" constant="-16" id="5DQ-io-E3P"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="DNV-c6-pIz" secondAttribute="bottom" constant="8" id="LTP-B0-neg"/>
+                <constraint firstItem="xtM-FW-f09" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="VaV-4i-A5t"/>
+                <constraint firstItem="AOn-LC-45o" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.199777" id="a34-5e-Dpv"/>
+                <constraint firstItem="DNV-c6-pIz" firstAttribute="top" secondItem="AOn-LC-45o" secondAttribute="bottom" constant="8" id="gpU-1G-6PA"/>
+                <constraint firstItem="AOn-LC-45o" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="nVn-2P-7Ht"/>
+                <constraint firstItem="DNV-c6-pIz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="olP-8Q-sba"/>
+                <constraint firstItem="hJv-Uj-ZoI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="otI-Wy-fyf"/>
+                <constraint firstItem="AOn-LC-45o" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pDR-2s-hZ8"/>
+                <constraint firstItem="xtM-FW-f09" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qdX-0U-MB7"/>
+                <constraint firstItem="AOn-LC-45o" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="qp6-Vp-3nj"/>
+                <constraint firstItem="xtM-FW-f09" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="sWX-7z-7pY"/>
+                <constraint firstAttribute="bottom" secondItem="xtM-FW-f09" secondAttribute="bottom" id="xqR-5o-rjw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="1" width="375" height="812"/>
+        <image name="Rectangle 5" width="375" height="314"/>
+    </resources>
+</document>

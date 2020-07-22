@@ -21,24 +21,34 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
        guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: UIScreen.main.bounds)
         window!.windowScene = windowScene
-        let tabBarController = UITabBarController()
-        let homeTabVC = homeVC(nibName: "homeVC",bundle: nil)
-        let myOrdersTabVC = myOrdersVC(nibName:"myOrdersVC",bundle: nil)
-        let notificationTabVC = notificationVC(nibName: "notificationVC",bundle: nil)
-        let moreTabVC = moreVC(nibName:"moreVC",bundle: nil)
-        homeTabVC.tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "WhatsApp Image 202"), selectedImage: UIImage(named: "WhatsApp Image 2020-02-04 at 6.40.17 PM copy-1"))
-        myOrdersTabVC.tabBarItem = UITabBarItem(title: "My Orders",image:UIImage(named: "checklist") ,tag:2)
-        notificationTabVC.tabBarItem = UITabBarItem(title: "Notification",image: UIImage(named: "notifications-button"),tag: 3)
-        moreTabVC.tabBarItem = UITabBarItem(title: "More",image:UIImage(named: "ellipsis-1") ,tag:4)
-        let controllers = [homeTabVC,myOrdersTabVC,notificationTabVC,moreTabVC].map {
-            UINavigationController(rootViewController: $0)
+        if helperLogin.getAPIToken() == nil {
+            let navigationController = UINavigationController(rootViewController: loginVC())
+            window!.rootViewController = navigationController
+            window!.makeKeyAndVisible()
+            print(helperLogin.getAPIToken() ?? "")
+        }else {
+            let tabBarController = UITabBarController()
+            let homeTabVC = homeVC(nibName: "homeVC",bundle: nil)
+            let myOrdersTabVC = myOrdersVC(nibName:"myOrdersVC",bundle: nil)
+            let notificationTabVC = notificationVC(nibName: "notificationVC",bundle: nil)
+            let moreTabVC = moreVC(nibName:"moreVC",bundle: nil)
+            homeTabVC.tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "WhatsApp Image 202"), selectedImage: UIImage(named: "WhatsApp Image 2020-02-04 at 6.40.17 PM copy-1"))
+            myOrdersTabVC.tabBarItem = UITabBarItem(title: "My Orders",image:UIImage(named: "checklist") ,tag:2)
+            notificationTabVC.tabBarItem = UITabBarItem(title: "Notification",image: UIImage(named: "notifications-button"),tag: 3)
+            moreTabVC.tabBarItem = UITabBarItem(title: "More",image:UIImage(named: "ellipsis-1") ,tag:4)
+            let controllers = [homeTabVC,myOrdersTabVC,notificationTabVC,moreTabVC].map {
+                UINavigationController(rootViewController: $0)
+                
+            }
+            tabBarController.tabBar.tintColor = #colorLiteral(red: 0.2141054571, green: 0.3131969273, blue: 0.6085140705, alpha: 1)
+            tabBarController.viewControllers = controllers
+            
+            window?.rootViewController = tabBarController
+            window!.makeKeyAndVisible()
+            print(helperLogin.getAPIToken() ?? "")
             
         }
-        tabBarController.tabBar.tintColor = #colorLiteral(red: 0.2141054571, green: 0.3131969273, blue: 0.6085140705, alpha: 1)
-        tabBarController.viewControllers = controllers
         
-        window?.rootViewController = tabBarController
-        window!.makeKeyAndVisible()
         
         
         

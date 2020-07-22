@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="maintenanceCart" customModule="Tayseer" customModuleProvider="target">
+            <connections>
+                <outlet property="tabelView" destination="koH-ey-mpl" id="gi0-K7-kxU"/>
+                <outlet property="totalPrice" destination="G50-KZ-fDG" id="XCF-kR-lVR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Yn0-NN-CBp">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="741"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHJ-Lc-OLz" customClass="coustomRoundedButton" customModule="Tayseer" customModuleProvider="target">
+                    <rect key="frame" x="117.5" y="681" width="179" height="44"/>
+                    <color key="backgroundColor" red="0.21410545710000001" green="0.31319692729999998" blue="0.60851407049999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                    <state key="normal" title="Check Out">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="checkOutBtn:" destination="-1" eventType="touchUpInside" id="xZ7-N0-r8o"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="koH-ey-mpl">
+                    <rect key="frame" x="8" y="8" width="398" height="598.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="51" translatesAutoresizingMaskIntoConstraints="NO" id="jQT-vm-rpE">
+                    <rect key="frame" x="8" y="638.5" width="398" height="26.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G50-KZ-fDG">
+                            <rect key="frame" x="0.0" y="0.0" width="398" height="26.5"/>
+                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                            <color key="textColor" red="0.2156862745" green="0.31372549020000001" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="RHJ-Lc-OLz" firstAttribute="top" secondItem="jQT-vm-rpE" secondAttribute="bottom" constant="16" id="48O-WQ-fiq"/>
+                <constraint firstItem="AXD-U2-tlb" firstAttribute="trailing" secondItem="koH-ey-mpl" secondAttribute="trailing" constant="8" id="9zh-wo-Q9R"/>
+                <constraint firstItem="koH-ey-mpl" firstAttribute="leading" secondItem="AXD-U2-tlb" secondAttribute="leading" constant="8" id="EaO-70-QEx"/>
+                <constraint firstItem="AXD-U2-tlb" firstAttribute="trailing" secondItem="jQT-vm-rpE" secondAttribute="trailing" constant="8" id="SsW-Xs-xt8"/>
+                <constraint firstItem="koH-ey-mpl" firstAttribute="top" secondItem="Yn0-NN-CBp" secondAttribute="top" constant="8" id="U1z-vv-Ovk"/>
+                <constraint firstItem="RHJ-Lc-OLz" firstAttribute="centerX" secondItem="Yn0-NN-CBp" secondAttribute="centerX" id="bvS-7U-rGL"/>
+                <constraint firstItem="RHJ-Lc-OLz" firstAttribute="width" secondItem="Yn0-NN-CBp" secondAttribute="width" multiplier="0.432367" id="c2c-dP-vGd"/>
+                <constraint firstItem="AXD-U2-tlb" firstAttribute="bottom" secondItem="RHJ-Lc-OLz" secondAttribute="bottom" constant="16" id="jlp-D4-f5c"/>
+                <constraint firstItem="jQT-vm-rpE" firstAttribute="top" secondItem="koH-ey-mpl" secondAttribute="bottom" constant="32" id="nDD-cW-atF"/>
+                <constraint firstItem="jQT-vm-rpE" firstAttribute="leading" secondItem="AXD-U2-tlb" secondAttribute="leading" constant="8" id="uae-T3-Rkr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="AXD-U2-tlb"/>
+            <point key="canvasLocation" x="89.855072463768124" y="-65.290178571428569"/>
+        </view>
+    </objects>
+</document>

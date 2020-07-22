@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="productCart" customModule="Tayseer" customModuleProvider="target">
+            <connections>
+                <outlet property="tabelView" destination="SuF-H3-5bf" id="a7e-U0-Gwp"/>
+                <outlet property="totalPrice" destination="fGy-Ym-CsR" id="7VE-eS-vVR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="gBI-OY-gIE">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="658"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SuF-H3-5bf">
+                    <rect key="frame" x="8" y="8" width="398" height="542"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFR-1g-DmN" customClass="coustomRoundedButton" customModule="Tayseer" customModuleProvider="target">
+                    <rect key="frame" x="117.5" y="598" width="179" height="44"/>
+                    <color key="backgroundColor" red="0.21410545710000001" green="0.31319692729999998" blue="0.60851407049999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                    <state key="normal" title="Check Out">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="checkOutBtn:" destination="-1" eventType="touchUpInside" id="XVA-78-cvj"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGy-Ym-CsR">
+                    <rect key="frame" x="8" y="566" width="398" height="0.0"/>
+                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="SuF-H3-5bf" firstAttribute="top" secondItem="gBI-OY-gIE" secondAttribute="top" constant="8" id="3zM-ro-SWr"/>
+                <constraint firstItem="PFR-1g-DmN" firstAttribute="top" secondItem="fGy-Ym-CsR" secondAttribute="bottom" constant="32" id="97R-pn-ZIR"/>
+                <constraint firstItem="fGy-Ym-CsR" firstAttribute="leading" secondItem="iPZ-gB-SVF" secondAttribute="leading" constant="8" id="9eg-Gq-God"/>
+                <constraint firstItem="iPZ-gB-SVF" firstAttribute="trailing" secondItem="SuF-H3-5bf" secondAttribute="trailing" constant="8" id="ASh-uu-nPz"/>
+                <constraint firstItem="PFR-1g-DmN" firstAttribute="centerX" secondItem="gBI-OY-gIE" secondAttribute="centerX" id="AVU-Tt-TZj"/>
+                <constraint firstItem="SuF-H3-5bf" firstAttribute="leading" secondItem="iPZ-gB-SVF" secondAttribute="leading" constant="8" id="PoQ-CH-qnj"/>
+                <constraint firstItem="PFR-1g-DmN" firstAttribute="width" secondItem="gBI-OY-gIE" secondAttribute="width" multiplier="0.432367" id="Qmo-Gf-RvG"/>
+                <constraint firstItem="fGy-Ym-CsR" firstAttribute="top" secondItem="SuF-H3-5bf" secondAttribute="bottom" constant="16" id="bag-ya-HAd"/>
+                <constraint firstItem="iPZ-gB-SVF" firstAttribute="bottom" secondItem="PFR-1g-DmN" secondAttribute="bottom" constant="16" id="nME-t2-mXB"/>
+                <constraint firstAttribute="trailing" secondItem="fGy-Ym-CsR" secondAttribute="trailing" constant="8" id="yH8-oR-MQu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="iPZ-gB-SVF"/>
+            <point key="canvasLocation" x="73.913043478260875" y="-28.794642857142854"/>
+        </view>
+    </objects>
+</document>

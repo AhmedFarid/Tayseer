@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="addToCartVC" customModule="Tayseer" customModuleProvider="target">
+            <connections>
+                <outlet property="minQtyBTN" destination="1SB-NT-0dZ" id="LeW-so-ziY"/>
+                <outlet property="plusQtyBTN" destination="u0T-6n-g85" id="671-l4-kFY"/>
+                <outlet property="popView" destination="YFt-4k-lRV" id="nJl-it-bYC"/>
+                <outlet property="priceAndTItel" destination="zsy-BB-HOW" id="1dm-Ia-jay"/>
+                <outlet property="priceLabel" destination="rFt-ip-Ehq" id="Ovo-Oh-aqx"/>
+                <outlet property="qtyText" destination="5ZV-yj-zme" id="uBW-py-3ss"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YFt-4k-lRV">
+                    <rect key="frame" x="16" y="304.5" width="382" height="287"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuk-a6-UGS">
+                            <rect key="frame" x="8" y="8" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="53F-Wo-Sb7"/>
+                                <constraint firstAttribute="width" constant="25" id="d1S-7T-fpY"/>
+                            </constraints>
+                            <state key="normal" image="Close"/>
+                            <connections>
+                                <action selector="closeBtn:" destination="-1" eventType="touchUpInside" id="Jfb-jn-dlr"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add To Cart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKE-Uk-uSy">
+                            <rect key="frame" x="150.5" y="16" width="81.5" height="32"/>
+                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="VBJ-1J-vJs">
+                            <rect key="frame" x="147" y="106.5" width="88" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0T-6n-g85">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <state key="normal" image="Group 1901"/>
+                                    <connections>
+                                        <action selector="pluseQtyAction:" destination="-1" eventType="touchUpInside" id="1nD-fN-17x"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ZV-yj-zme">
+                                    <rect key="frame" x="78" y="0.0" width="10" height="50"/>
+                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1SB-NT-0dZ">
+                                    <rect key="frame" x="88" y="0.0" width="0.0" height="50"/>
+                                    <state key="normal" image="Group 1900-1"/>
+                                    <connections>
+                                        <action selector="minQtyAction:" destination="-1" eventType="touchUpInside" id="ixs-AB-Qj1"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFt-ip-Ehq">
+                            <rect key="frame" x="154" y="172.5" width="74" height="32"/>
+                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyp-bG-p1I" customClass="coustomRoundedButton" customModule="Tayseer" customModuleProvider="target">
+                            <rect key="frame" x="58.5" y="220.5" width="265" height="45"/>
+                            <color key="backgroundColor" red="0.21410545710000001" green="0.31319692729999998" blue="0.60851407049999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="mCI-db-GS6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                            <state key="normal" title="Add to cart">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="addCartBTN:" destination="-1" eventType="touchUpInside" id="iif-1R-Wmx"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name And Price" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsy-BB-HOW">
+                            <rect key="frame" x="8" y="64" width="366" height="26.5"/>
+                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="zsy-BB-HOW" secondAttribute="trailing" constant="8" id="3Ut-ed-80k"/>
+                        <constraint firstItem="vKE-Uk-uSy" firstAttribute="top" secondItem="YFt-4k-lRV" secondAttribute="top" constant="16" id="3um-8d-jGt"/>
+                        <constraint firstAttribute="bottom" secondItem="oyp-bG-p1I" secondAttribute="bottom" constant="21.5" id="9ae-YV-AB6"/>
+                        <constraint firstItem="oyp-bG-p1I" firstAttribute="width" secondItem="YFt-4k-lRV" secondAttribute="width" multiplier="0.693717" id="ANw-Uu-I3u"/>
+                        <constraint firstItem="vKE-Uk-uSy" firstAttribute="centerX" secondItem="YFt-4k-lRV" secondAttribute="centerX" id="IXD-AX-CW3"/>
+                        <constraint firstItem="zsy-BB-HOW" firstAttribute="leading" secondItem="YFt-4k-lRV" secondAttribute="leading" constant="8" id="PEv-3h-R5Q"/>
+                        <constraint firstItem="VBJ-1J-vJs" firstAttribute="centerX" secondItem="YFt-4k-lRV" secondAttribute="centerX" id="Rxz-uD-T36"/>
+                        <constraint firstItem="oyp-bG-p1I" firstAttribute="top" secondItem="rFt-ip-Ehq" secondAttribute="bottom" constant="16" id="VqK-WD-mGY"/>
+                        <constraint firstItem="fuk-a6-UGS" firstAttribute="top" secondItem="YFt-4k-lRV" secondAttribute="top" constant="8" id="bgo-ir-oJ5"/>
+                        <constraint firstItem="fuk-a6-UGS" firstAttribute="leading" secondItem="YFt-4k-lRV" secondAttribute="leading" constant="8" id="eoq-3D-FmD"/>
+                        <constraint firstItem="rFt-ip-Ehq" firstAttribute="centerX" secondItem="YFt-4k-lRV" secondAttribute="centerX" id="gw4-R8-qSE"/>
+                        <constraint firstItem="VBJ-1J-vJs" firstAttribute="top" secondItem="zsy-BB-HOW" secondAttribute="bottom" constant="16" id="nt4-cj-diX"/>
+                        <constraint firstItem="rFt-ip-Ehq" firstAttribute="top" secondItem="VBJ-1J-vJs" secondAttribute="bottom" constant="16" id="rGZ-xQ-TLG"/>
+                        <constraint firstItem="oyp-bG-p1I" firstAttribute="centerX" secondItem="YFt-4k-lRV" secondAttribute="centerX" id="sIj-Go-9qN"/>
+                        <constraint firstItem="zsy-BB-HOW" firstAttribute="top" secondItem="vKE-Uk-uSy" secondAttribute="bottom" constant="16" id="uRF-J7-hMc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.372771786971831" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YFt-4k-lRV" secondAttribute="trailing" constant="16" id="8t0-CK-Rtw"/>
+                <constraint firstItem="YFt-4k-lRV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="BjE-yL-6bT"/>
+                <constraint firstItem="YFt-4k-lRV" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ek8-ut-bCT"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Close" width="13" height="13"/>
+        <image name="Group 1900-1" width="50" height="50"/>
+        <image name="Group 1901" width="50" height="50"/>
+    </resources>
+</document>

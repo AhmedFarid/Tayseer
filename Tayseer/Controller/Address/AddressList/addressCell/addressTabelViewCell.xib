@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="146" id="KGk-i7-Jjw" customClass="addressTabelViewCell" customModule="Tayseer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="371" height="146"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="371" height="146"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69O-gJ-wF9">
+                        <rect key="frame" x="8" y="8" width="355" height="54"/>
+                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rcv-BA-cLy">
+                        <rect key="frame" x="8" y="70" width="355" height="26.5"/>
+                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xJ-5z-THs">
+                        <rect key="frame" x="8" y="104.5" width="355" height="26.5"/>
+                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbc-at-Nrh">
+                        <rect key="frame" x="8" y="139" width="355" height="0.0"/>
+                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Rcv-BA-cLy" firstAttribute="top" secondItem="69O-gJ-wF9" secondAttribute="bottom" constant="8" id="9Ts-wO-UMG"/>
+                    <constraint firstAttribute="trailing" secondItem="mbc-at-Nrh" secondAttribute="trailing" constant="8" id="J2F-ZW-rfF"/>
+                    <constraint firstAttribute="trailing" secondItem="Rcv-BA-cLy" secondAttribute="trailing" constant="8" id="OE5-2B-stk"/>
+                    <constraint firstItem="69O-gJ-wF9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="PeJ-qI-PkA"/>
+                    <constraint firstItem="2xJ-5z-THs" firstAttribute="top" secondItem="Rcv-BA-cLy" secondAttribute="bottom" constant="8" id="SGF-cl-EIi"/>
+                    <constraint firstItem="Rcv-BA-cLy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="bUr-6c-bvU"/>
+                    <constraint firstItem="mbc-at-Nrh" firstAttribute="top" secondItem="2xJ-5z-THs" secondAttribute="bottom" constant="8" id="f82-2m-F73"/>
+                    <constraint firstAttribute="trailing" secondItem="69O-gJ-wF9" secondAttribute="trailing" constant="8" id="j0V-ye-xow"/>
+                    <constraint firstAttribute="bottom" secondItem="mbc-at-Nrh" secondAttribute="bottom" constant="7" id="mfj-Ia-7jZ"/>
+                    <constraint firstItem="mbc-at-Nrh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="oBE-MK-fVI"/>
+                    <constraint firstItem="2xJ-5z-THs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="s4B-CI-izK"/>
+                    <constraint firstItem="69O-gJ-wF9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="vyF-lR-2fb"/>
+                    <constraint firstAttribute="trailing" secondItem="2xJ-5z-THs" secondAttribute="trailing" constant="8" id="x4x-hA-1H8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addressName" destination="Rcv-BA-cLy" id="i7S-u0-FWJ"/>
+                <outlet property="city" destination="2xJ-5z-THs" id="HM0-Ub-gmP"/>
+                <outlet property="isDefualtAddress" destination="mbc-at-Nrh" id="BZZ-Rh-4AN"/>
+                <outlet property="name" destination="69O-gJ-wF9" id="r1f-ch-kav"/>
+            </connections>
+            <point key="canvasLocation" x="168.84057971014494" y="187.5"/>
+        </tableViewCell>
+    </objects>
+</document>

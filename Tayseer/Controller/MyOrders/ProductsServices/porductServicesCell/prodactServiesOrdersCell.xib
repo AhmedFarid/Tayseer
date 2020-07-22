@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="129" id="KGk-i7-Jjw" customClass="prodactServiesOrdersCell" customModule="Tayseer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="491" height="129"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="491" height="129"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="E7T-Np-azv">
+                        <rect key="frame" x="8" y="8" width="475" height="32"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Id" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SB8-iA-1Nv">
+                                <rect key="frame" x="0.0" y="0.0" width="235.5" height="32"/>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="created_at" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4S2-pT-Iud">
+                                <rect key="frame" x="243.5" y="0.0" width="231.5" height="32"/>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="s68-uV-m2J">
+                        <rect key="frame" x="8" y="48" width="475" height="32"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="order_total_price" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGi-BK-vpe">
+                                <rect key="frame" x="0.0" y="0.0" width="235.5" height="32"/>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="delevery_fees" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eY-sd-G1o">
+                                <rect key="frame" x="243.5" y="0.0" width="231.5" height="32"/>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0hf-BJ-HCD">
+                        <rect key="frame" x="8" y="88" width="475" height="32"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="customer_street" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAH-2f-nKG">
+                                <rect key="frame" x="0.0" y="0.0" width="235.5" height="32"/>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="order_stat" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31I-5P-oYZ">
+                                <rect key="frame" x="243.5" y="0.0" width="231.5" height="32"/>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="E7T-Np-azv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="6Rn-4O-vJa"/>
+                    <constraint firstAttribute="bottom" secondItem="0hf-BJ-HCD" secondAttribute="bottom" constant="9" id="7Pn-Pd-PuC"/>
+                    <constraint firstAttribute="trailing" secondItem="E7T-Np-azv" secondAttribute="trailing" constant="8" id="AwF-K7-hCu"/>
+                    <constraint firstAttribute="trailing" secondItem="s68-uV-m2J" secondAttribute="trailing" constant="8" id="Blg-pF-HxN"/>
+                    <constraint firstItem="0hf-BJ-HCD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="IfH-sK-I7r"/>
+                    <constraint firstItem="s68-uV-m2J" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="MKb-5v-SHs"/>
+                    <constraint firstItem="s68-uV-m2J" firstAttribute="top" secondItem="E7T-Np-azv" secondAttribute="bottom" constant="8" id="WKT-nB-46p"/>
+                    <constraint firstItem="0hf-BJ-HCD" firstAttribute="top" secondItem="s68-uV-m2J" secondAttribute="bottom" constant="8" id="YN9-Iv-a4Y"/>
+                    <constraint firstItem="E7T-Np-azv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="jXg-eR-m8s"/>
+                    <constraint firstAttribute="trailing" secondItem="0hf-BJ-HCD" secondAttribute="trailing" constant="8" id="pVM-7c-MFA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.2156862745" green="0.31372549020000001" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="OrderId" destination="SB8-iA-1Nv" id="5ax-UJ-kxm"/>
+                <outlet property="createdAt" destination="4S2-pT-Iud" id="zMi-ru-Bp4"/>
+                <outlet property="customerStreet" destination="BAH-2f-nKG" id="w0i-KH-RNS"/>
+                <outlet property="deleveryFees" destination="6eY-sd-G1o" id="TC2-Xf-8K7"/>
+                <outlet property="orderStat" destination="31I-5P-oYZ" id="0jd-bE-S3Y"/>
+                <outlet property="orderTotalPrice" destination="AGi-BK-vpe" id="LPl-OF-J20"/>
+            </connections>
+            <point key="canvasLocation" x="241.30434782608697" y="144.97767857142856"/>
+        </tableViewCell>
+    </objects>
+</document>

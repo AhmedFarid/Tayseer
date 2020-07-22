@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="121" id="KGk-i7-Jjw" customClass="maintCartCell" customModule="Tayseer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="417" height="121"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="417" height="121"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cat Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6L-5x-59e">
+                        <rect key="frame" x="8" y="8" width="363" height="32"/>
+                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yo8-r6-4Lz">
+                        <rect key="frame" x="8" y="48" width="401" height="32"/>
+                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HF5-hW-n4A">
+                        <rect key="frame" x="379" y="8" width="30" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="qD3-4o-pk5"/>
+                        </constraints>
+                        <state key="normal" image="Close"/>
+                        <connections>
+                            <action selector="deleteBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="LRM-UL-g8j"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="a6L-5x-59e" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="1Ab-ii-Xjm"/>
+                    <constraint firstItem="HF5-hW-n4A" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="9UG-QM-ow3"/>
+                    <constraint firstAttribute="trailing" secondItem="yo8-r6-4Lz" secondAttribute="trailing" constant="8" id="Gqy-ff-yxU"/>
+                    <constraint firstItem="yo8-r6-4Lz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="UGc-Hk-pwY"/>
+                    <constraint firstItem="HF5-hW-n4A" firstAttribute="leading" secondItem="a6L-5x-59e" secondAttribute="trailing" constant="8" id="cGP-Gm-5Yo"/>
+                    <constraint firstItem="a6L-5x-59e" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="hxM-oN-bDC"/>
+                    <constraint firstAttribute="trailing" secondItem="HF5-hW-n4A" secondAttribute="trailing" constant="8" id="tSz-O7-iOU"/>
+                    <constraint firstItem="yo8-r6-4Lz" firstAttribute="top" secondItem="a6L-5x-59e" secondAttribute="bottom" constant="8" id="u9R-zA-KQr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="catName" destination="a6L-5x-59e" id="ZVl-23-Wan"/>
+                <outlet property="totalPrice" destination="yo8-r6-4Lz" id="csg-F2-B9H"/>
+            </connections>
+            <point key="canvasLocation" x="202.17391304347828" y="179.12946428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Close" width="13" height="13"/>
+    </resources>
+</document>
